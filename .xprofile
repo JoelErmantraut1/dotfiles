@@ -1,0 +1,9 @@
+setxkbmap latam &
+nitrogen --random --set-zoom-fill &
+picom -f &
+xset -b &
+xset s off -dpms &
+clipmenud &
+python $HOME/.config/scripts/snippets.py &
+python $HOME/.config/scripts/volume_control.py &
+python $HOME/.config/scripts/fast_scrolling.py &
