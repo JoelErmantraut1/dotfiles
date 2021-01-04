@@ -1,0 +1,169 @@
+[begin] (FluxBox)
+    [submenu] (Development)
+        [exec] (Atollic TrueSTUDIO for STM32 9.3.0) {/opt/truestudio/ide/TrueSTUDIO}
+        [exec] (bpython) {xterm -e bpython}
+        [exec] (CMake) {cmake-gui}
+        [exec] (CMake curses GUI [ccmake]) {xterm -e ccmake}
+        [exec] (Electron) {electron}
+        [exec] (Electron 9) {electron9}
+        [exec] (IDLE [Python IDE]) {idle}
+        [exec] (Kite) {/home/joel/.local/share/kite/kited}
+        [exec] (Kompare) {kompare}
+        [exec] (Python) {xterm -e python}
+        [exec] (Python [v2.7]) {xterm -e python2.7}
+        [exec] (Qt Assistant) {assistant}
+        [exec] (Qt Designer) {designer}
+        [exec] (Qt Linguist) {linguist}
+        [exec] (Qt QDbusViewer) {qdbusviewer}
+        [exec] (Segger JFlashExe) {JFlashExe}
+        [exec] (Segger JFlashLiteExe) {JFlashLiteExe}
+        [exec] (Segger JFlashSPI_CL) {JFlashSPI_CL}
+        [exec] (Segger JLinkConfigExe) {JLinkConfigExe}
+        [exec] (Segger JLinkExe) {JLinkExe}
+        [exec] (Segger JLinkGDBServer) {JLinkGDBServer}
+        [exec] (Segger JLinkGUIServerExe) {JLinkGUIServerExe}
+        [exec] (Segger JLinkLicenseManager) {JLinkLicenseManager}
+        [exec] (Segger JLinkRegistration) {JLinkRegistration}
+        [exec] (Segger JLinkRemoteServer) {JLinkRemoteServer}
+        [exec] (Segger JLinkRTTClient) {JLinkRTTClient}
+        [exec] (Segger JLinkRTTLogger) {JLinkRTTLogger}
+        [exec] (Segger JLinkSTM32) {JLinkSTM32}
+        [exec] (Segger JLinkSWOViewer) {JLinkSWOViewer}
+        [exec] (Segger JMemExe) {JMemExe}
+        [exec] (Segger JRunExe) {JRunExe}
+        [exec] (Segger JTAGLoadExe) {JTAGLoadExe}
+        [exec] (Sublime Text) {/opt/sublime_text/sublime_text}
+        [exec] (Tclsh8.6) {xterm -e tclsh8.6}
+    [end]
+    [submenu] (Editors)
+        [exec] (Nano) {xterm -e nano}
+        [exec] (Neovim) {xterm -e nvim}
+        [exec] (Text Editor) {gedit}
+    [end]
+    [submenu] (Games)
+        [submenu] (Adventure)
+            [exec] (Sclient) {sclient}
+        [end]
+        [submenu] (Arcade)
+            [exec] (PacMan) {pacman}
+        [end]
+        [submenu] (Board)
+            [exec] (Monopoly) {xterm -e monop}
+        [end]
+    [end]
+    [submenu] (Graphics)
+        [exec] (Deepin Image Viewer) {deepin-image-viewer}
+        [exec] (Flameshot) {flameshot}
+        [exec] (GraphicsMagick) {gm display logo:}
+        [exec] (nomacs) {nomacs}
+        [exec] (Pinta) {pinta}
+    [end]
+    [submenu] (Multimedia)
+        [exec] (ALSA mixer) {xterm -e alsamixer}
+        [exec] (PulseAudio Volume Control) {pavucontrol}
+        [exec] (Qt V4L2 test Utility) {qv4l2}
+        [exec] (Qt V4L2 video capture utility) {qvidcap}
+        [exec] (VLC media player) {vlc}
+        [exec] (VLC media player) {qvlc}
+        [exec] (Volume Icon) {volumeicon}
+    [end]
+    [submenu] (Network)
+        [exec] (Avahi SSH Server Browser) {bssh}
+        [exec] (Avahi VNC Server Browser) {bvnc}
+        [exec] (Brave) {brave}
+        [exec] (Chromium) {chromium}
+        [exec] (FireFox) {firefox}
+        [exec] (Franz) {franz}
+        [exec] (qutebrowser) {qutebrowser}
+        [exec] (TkVNC) {xterm -e tkvnc}
+    [end]
+    [submenu] (Office)
+        [exec] (Deepin Calendar) {dde-calendar}
+        [exec] (Foxit Reader) {foxitreader}
+    [end]
+    [submenu] (Science)
+        [exec] (GNU Octave) {octave}
+        [exec] (Qalculate!) {qalculate-gtk}
+    [end]
+    [submenu] (Shells)
+        [exec] (Alacritty) {alacritty}
+        [exec] (File Manager PCManFM) {pcmanfm}
+        [exec] (GIT) {xterm -e git}
+        [exec] (Konsole) {konsole}
+        [exec] (Krusader) {krusader}
+        [exec] (Oracle VM VirtualBox) {VirtualBox}
+        [exec] (ranger) {xterm -e ranger}
+        [exec] (urxvt) {urxvt}
+        [exec] (urxvt [client]) {urxvtc}
+        [exec] (urxvt [tabbed]) {urxvt-tabbed}
+        [exec] (UXTerm) {uxterm}
+        [exec] (Vifm) {xterm -e vifm}
+        [exec] (VirtualBox) {virtualbox}
+        [exec] (Xterm) {xterm}
+    [end]
+    [submenu] (System)
+        [submenu] (Settings)
+            [submenu] (Xfce)
+                [exec] (Screensaver) {xscreensaver-demo}
+            [end]
+            [exec] (Customize Look and Feel) {lxappearance}
+            [exec] (Deepin Control Center) {dde-control-center --show}
+            [exec] (Desktop Preferences) {pcmanfm --desktop-pref}
+            [exec] (Grub Customizer) {grub-customizer}
+            [exec] (nitrogen) {nitrogen}
+            [exec] (Preferred Applications) {libfm-pref-apps}
+        [end]
+        [exec] (Avahi Zeroconf Browser) {avahi-discover}
+        [exec] (Computer) {gio open computer:///}
+        [exec] (Deepin System Monitor) {deepin-system-monitor}
+        [exec] (GParted) {gparted}
+        [exec] (Hardware Locality lstopo) {lstopo}
+        [exec] (Home) {dde-file-manager -O -n}
+        [exec] (Htop) {xterm -e htop}
+        [exec] (LSHW) {gtk-lshw}
+        [exec] (Multitasking View) {dbus-send --session --dest=com.deepin.wm --print-reply /com/deepin/wm com.deepin.wm.PerformAction int32:1}
+        [exec] (Pstree) {xterm -e pstree.x11}
+        [exec] (pstree) {xterm -e pstree}
+        [exec] (pstree) {xterm -e /usr/bin/pstree.x11}
+        [exec] (Top) {xterm -e top}
+        [exec] (Trash) {gio open trash:///}
+        [exec] (UNetbootin) {unetbootin}
+        [exec] (Xkill) {xkill}
+        [exec] (Xrefresh) {xrefresh}
+    [end]
+    [submenu] (Utilities)
+        [exec] (About Xfce) {xfce4-about}
+        [exec] (Activate ScreenSaver [Next]) {xscreensaver-command -next}
+        [exec] (Activate ScreenSaver [Previous]) {xscreensaver-command -prev}
+        [exec] (Activate ScreenSaver [Random]) {xscreensaver-command -activate}
+        [exec] (Albert) {albert}
+        [exec] (Bc) {xterm -e bc}
+        [exec] (compton) {compton}
+        [exec] (Dc) {xterm -e dc}
+        [exec] (Deepin File Manager) {dde-file-manager}
+        [exec] (Demo Screen Hacks) {xscreensaver-command -demo}
+        [exec] (Disable XScreenSaver) {xscreensaver-command -exit}
+        [exec] (Enable XScreenSaver) {xscreensaver}
+        [exec] (Info) {xterm -e info}
+        [exec] (Lock Screen [XScreenSaver]) {xscreensaver-command -lock}
+        [exec] (picom) {picom}
+        [exec] (Prepros) {prepros}
+        [exec] (Reinitialize XScreenSaver) {xscreensaver-command -restart}
+        [exec] (ScreenSaver Preferences) {xscreensaver-command -prefs}
+        [exec] (Xarchiver) {xarchiver}
+        [exec] (Xev) {xterm -e xev}
+        [exec] (Xsetroot) {xsetroot}
+    [end]
+    [separator]
+    [submenu] (FluxBox)
+        [workspaces] (Workspaces)
+        [submenu] (Styles)
+            [stylesdir] (~/.fluxbox/styles)
+        [end]
+        [config] (Configure)
+        [reconfig] (Reconfig)
+        [restart] (Restart)
+        [separator]
+        [exit] (Exit)
+    [end]
+[end]

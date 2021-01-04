@@ -1,0 +1,165 @@
+# MOUSE CONTROL
+
+# click on the desktop to get menus
+OnDesktop Mouse1 :HideMenus
+OnDesktop Mouse2 :WorkspaceMenu
+OnDesktop Mouse3 :RootMenu
+
+# scroll on the desktop to change workspaces
+OnDesktop Mouse4 :PrevWorkspace
+OnDesktop Mouse5 :NextWorkspace
+
+# scroll on the toolbar to change current window
+OnToolbar Mouse4 :PrevWindow {static groups} (iconhidden=no)
+OnToolbar Mouse5 :NextWindow {static groups} (iconhidden=no)
+
+# Mod1 + left/right click to move/resize a window
+OnWindow Mod4 Mouse1 :MacroCmd {Raise} {Focus} {StartMoving}
+OnWindowBorder Move1 :StartMoving
+
+OnWindow Mod4 Mouse3 :MacroCmd {Raise} {Focus} {StartResizing NearestCorner}
+OnLeftGrip Move1 :StartResizing bottomleft
+OnRightGrip Move1 :StartResizing bottomright
+
+# Mod1 + middle click to lower the window
+# OnWindow Mod4 Mouse2 :Lower
+
+# control-click a window's titlebar and drag to attach windows
+OnTitlebar Control Mouse1 :StartTabbing
+
+# double click on the titlebar to shade
+OnTitlebar Double Mouse1 :Shade
+
+# left click on the titlebar to move the window
+OnTitlebar Mouse1 :MacroCmd {Raise} {Focus} {ActivateTab}
+OnTitlebar Move1  :StartMoving
+
+# middle click on the titlebar to lower
+OnTitlebar Mouse2 :Lower
+
+# right click on the titlebar for a menu of options
+OnTitlebar Mouse3 :WindowMenu
+
+
+# WINDOW CONTROL
+
+
+# Opens Menu in any window
+Mod1 Mouse3 :RootMenu
+
+# Mod1-tab
+Mod1 Tab :NextWindow {groups} (workspace=[current])
+Mod1 Shift Tab :PrevWindow {groups} (workspace=[current])
+
+# current window commands
+Mod4 w :Close
+Mod4 t   :ToggleDecor
+# Mod1 F5 :Kill
+# Mod1 F9 :Minimize
+# Mod1 F10 :Maximize
+# Mod4 F11 :Fullscreen
+
+# open the window menu
+Mod1 space :WindowMenu
+
+# change to previous/next workspace
+Mod4 Mod1 Left :PrevWorkspace
+Mod4 Mod1 Right :NextWorkspace
+
+# send the current window to previous/next workspace
+Mod4 Shift Left :SendToPrevWorkspace
+Mod4 Shift Right:SendToNextWorkspace
+
+# send the current window and follow it to previous/next workspace
+# Control Mod4 Left :TakeToPrevWorkspace
+# Control Mod4 Right :TakeToNextWorkspace
+
+# change to a specific workspace
+Mod4 1 :Workspace 1
+Mod4 2 :Workspace 2
+Mod4 3 :Workspace 3
+Mod4 4 :Workspace 4
+Mod4 5 :Workspace 5
+Mod4 6 :Workspace 6
+Mod4 7 :Workspace 7
+Mod4 8 :Workspace 8
+Mod4 9 :Workspace 9
+
+# send the current window to a specific workspace
+Mod4 Shift 1 :SendToWorkspace 1
+Mod4 Shift 2 :SendToWorkspace 2
+Mod4 Shift 3 :SendToWorkspace 3
+Mod4 Shift 4 :SendToWorkspace 4
+Mod4 Shift 5 :SendToWorkspace 5
+Mod4 Shift 6 :SendToWorkspace 6
+Mod4 Shift 7 :SendToWorkspace 7
+Mod4 Shift 8 :SendToWorkspace 8
+Mod4 Shift 9 :SendToWorkspace 9
+
+# Toggle minimize/maximize on all windows
+Mod4 D :ShowDesktop
+
+# Closes all windows in all workspaces
+Mod4 Shift q: CloseAllWindows
+
+# Sends all windows in all workspaces to the first workspace
+Mod1 Shift Mod4 a :ForEach {SendToWorkspace 1}
+
+# Change position and size of floating windows
+Mod4 Left :MacroCmd {ResizeTo 50% 100%} {MoveTo 0 0 Left} {MaximizeVertical}
+Mod4 Right :MacroCmd {ResizeTo 50% 100%} {MoveTo 0 0 Right} {MaximizeVertical}
+Mod4 Up :MacroCmd {ResizeTo 100% 50%} {MoveTo 0 0 Up} {MaximizeHorizontal}
+Mod4 Down :MacroCmd {ResizeTo 100% 50%} {MoveTo 0 50%} {MaximizeHorizontal}
+Mod4 Mod1 Up :MaximizeWindow
+Mod4 Mod1 Down :MacroCmd {ResizeTo 70% 70%} {MoveTo 15% 15%}
+
+
+# WM CONTROL
+
+
+Mod4 Shift r :Restart
+Mod4 Shift q :Exec /home/joel/.config/dmenu/dmenu-session-options.sh
+
+
+# APPS CONTROL
+
+
+# open a terminal
+Mod4 Return :Exec alacritty
+
+# open a dialog to run programs
+Mod4 p :Exec fbrun
+
+# volume settings, using common keycodes
+# if these don't work, use xev to find out your real keycodes
+123 :Exec amixer sset Master,0 1+
+122 :Exec amixer sset Master,0 1-
+121 :Exec amixer sset Master,0 toggle
+
+179 :Exec spotify
+171 :Exec playerctl next
+172 :Exec playerctl play-pause
+173 :Exec playerctl previous
+174 :Exec playerctl stop
+
+Control Shift Return :Exec dmenu_run -p "»" -i -nf "#888888" -nb "#292d3e" -sf "#ffffff" -sb "#005577" -fn "UbuntuMono Nerd Font"
+
+Mod4 Shift Return :Exec dmenu_extended_run
+
+Mod4 e :Exec krusader
+Mod4 v :Exec clipmenu -p "»"
+Mod4 g :Exec rofimoji
+Mod4 l :Exec dm-tool lock
+Mod4 x :Exec dunstctl close
+Mod4 Shift space :Exec rofi -combi-modi window,drun -show combi -modi combi
+
+Mod4 Mod1 e :Exec pcmanfm
+Mod4 Mod1 n :Exec brave
+Mod4 Mod1 c :Exec qalculate-gtk
+Mod4 Shift s :Exec flameshot gui
+Mod4 Shift Print :Exec flameshot full -p /home/joel/Imagenes/Capturas
+Print :Exec flameshot screen -c
+Mod4 Mod1 v :Exec virtualbox
+Mod4 Mod1 d :Exec /home/joel/.config/dmenu/dmenu-edit-configs.sh
+Mod4 Mod1 w :Exec franz
+Mod4 Mod1 u :Exec /home/joel/.config/dmenu/dmenu-expulse-drives.sh
