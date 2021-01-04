@@ -74,10 +74,11 @@ widget_colors = [
 # Background first
 # Foreground second
 
-layout_theme = {"border_width": 0,
-                "margin": 3,
-                "border_focus": "e1acff",
-                "border_normal": "1D2330"
-                }
+layout_theme = {
+    "border_width": 2,
+    "margin": 3,
+    "border_focus": "349beb",
+    "border_normal": "1D2330",
+}
 
 # Styles
