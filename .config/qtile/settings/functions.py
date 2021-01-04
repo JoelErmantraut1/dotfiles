@@ -180,3 +180,9 @@ def widget_icons(icon, background):
         fontsize = 13,
         font = icons_font,
     )
+
+def change_wallpaper(qtile):
+    """
+    Changes wallpaper using the nitrogen command.
+    """
+    qtile.cmd_spawn("nitrogen --random --set-zoom-fill")

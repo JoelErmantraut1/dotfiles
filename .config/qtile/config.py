@@ -6,7 +6,6 @@ FUNCIONES INTERESANTES DE AÑADIR:
  - Cambiar los iconos de los layouts
  - Que al abrir correo o calendario abra una pestaña de Franz
  - Problema Spotify que al abrir no se abre en el grupo correcto
- - Widget CheckUpdates desaparece cuando no hay updates
 
 """
 
@@ -17,7 +16,7 @@ from libqtile.config import Screen
 
 from settings.common import colors
 from settings.mouse import mouse
-from settings.hooks import albert_open
+# from settings.hooks import albert_open
 from settings.key_settings import keys
 from settings.groups_settings import groups
 from settings.layouts_settings import floating_layout
@@ -73,5 +72,9 @@ def is_running(process):
 def execute_once(process):
     if not is_running(process):
         return subprocess.Popen(process.split())
+
+@hook.subscribe.startup
+def start():
+    pass
 
 """

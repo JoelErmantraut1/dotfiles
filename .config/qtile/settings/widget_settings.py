@@ -1,19 +1,40 @@
 # -*- coding: utf-8 -*-
 
 from settings.common import *
-from settings.functions import get_screen_resolution, spacers, separator, widget_separator, widget_icons
+from settings.functions import get_screen_resolution, spacers, separator, widget_separator, widget_icons, change_wallpaper
 
 from libqtile import widget
+from libqtile.widget import base
+
+import threading, subprocess
 
 # Imports
 
-def change_wallpaper(qtile):
-    """
-    Changes wallpaper using the nitrogen command.
-    """
-    qtile.cmd_spawn("nitrogen --random --set-zoom-fill")
+class CheckUpdates(base._TextBox):
 
-# Functions
+    def __init__(self, **config):
+        base._TextBox.__init__(self, text="N/A", **config)
+        self.text = None
+        self.update_time = 1800
+        self.no_updates_string = "N/A"
+        self.update()
+        threading.Timer(10, self.update).start()
+
+    def get_updates(self):
+        result = subprocess.run(['checkupdates'], capture_output=True).stdout
+        result = len(result.decode().split("\n")) - 1
+
+        if result == 0:
+            return self.no_updates_string
+        else:
+            return "Pacman: " + str(result)
+
+    def update(self):
+        self.text = self.get_updates()
+
+        threading.Timer(self.update_time, self.update).start()
+
+# Own Widgets
 
 width, height = get_screen_resolution()
 
@@ -153,6 +174,15 @@ widgets_bottom = [
         background = widget_colors[3][0],
         padding = 5,
     ),
+    widget_separator(widget_colors[5]),
+    widget_icons('ﮮ ', widget_colors[5]),
+    CheckUpdates(
+        font=common_font,
+        padding = 4,
+        background=widget_colors[5][0],
+        foreground=colors[2],
+        mouse_callbacks = {'Button1': lambda qtile: qtile.cmd_spawn(terminal + ' -e sudo pacman -Syu')}
+    ),
     widget_separator(widget_colors[4]),
     widget_icons(' ', widget_colors[4]),
     widget.Clock(
@@ -163,16 +193,5 @@ widgets_bottom = [
             'Button1': lambda qtile: qtile.cmd_spawn("zenity --calendar --text=''"),
             'Button3': lambda qtile: qtile.cmd_function(run_or_go("franz"))
         }
-    ),
-    widget.CheckUpdates(
-        background = widget_colors[5][0],
-        foreground = colors[2],
-        font = icons_font,
-        distro = "Arch_checkupdates",
-        update_interval = 1800,
-        padding = 5,
-        display_format = 'ﮮ {updates}',
-        no_updates_string = "N/A",
-        mouse_callbacks = {'Button1': lambda qtile: qtile.cmd_spawn(terminal + ' -e sudo pacman -Syu')},
-    ),
+    )
 ]
