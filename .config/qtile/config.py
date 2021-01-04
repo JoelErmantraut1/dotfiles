@@ -20,6 +20,7 @@ from settings.mouse import mouse
 from settings.hooks import albert_open
 from settings.key_settings import keys
 from settings.groups_settings import groups
+from settings.layouts_settings import floating_layout
 from settings.widget_settings import widgets_top, widgets_bottom
 
 screens = [

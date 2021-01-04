@@ -68,14 +68,14 @@ keys = [
     ),
     Key([mod], "Right",
         lazy.layout.increase_ratio().when('tile'),
-        lazy.layout.shrink().when('monadtall'),
+        lazy.layout.grow_main().when('monadtall'),
         lazy.window.set_position_floating(width // 2, 0).when('floating'),
         lazy.window.set_size_floating(width // 2, height).when('floating'),
         desc="Grows window width"
     ),
     Key([mod], "Left",
         lazy.layout.decrease_ratio().when('tile'),
-        lazy.layout.grow().when('monadtall'),
+        lazy.layout.shrink_main().when('monadtall'),
         lazy.window.set_position_floating(0, 0).when('floating'),
         lazy.window.set_size_floating(width // 2, height).when('floating'),
         desc="Reduces window width"
