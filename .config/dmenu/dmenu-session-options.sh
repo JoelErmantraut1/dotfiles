@@ -1,7 +1,6 @@
 #!/bin/bash
 
-declare options=("Cancelar
-Apagar
+declare options=("Apagar
 Reiniciar
 Suspender
 Bloquear
@@ -10,9 +9,6 @@ Salir")
 choice=$(echo -e "${options[@]}" | dmenu -p "»" -i -nf '#888888' -nb '#292d3e' -sf '#ffffff' -sb '#005577' -fn 'UbuntuMono Nerd Font') || exit 1
 
 case "$choice" in
-    Cancelar)
-        echo "Program terminated." && exit 1
-    ;;
     Apagar)
         choice="shutdown -h now"
     ;;

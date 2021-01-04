@@ -1,11 +1,9 @@
 #!/bin/bash
 
-declare options=("Cancelar
-alacritty
+declare options=("alacritty
 neovim
 qtile
 qutebrowser
-vifm
 zsh
 dmenu
 rofi
@@ -15,9 +13,7 @@ dunst")
 choice=$(echo -e "${options[@]}" | dmenu -p 'Config: ' -i -nf '#888888' -nb '#292d3e' -sf '#ffffff' -sb '#005577' -fn 'UbuntuMono Nerd Font') || exit 1
 
 case "$choice" in
-	Cancelar)
-		echo "Program terminated." && exit 1
-	;;	alacritty)
+	alacritty)
 		choice="$HOME/.config/alacritty/alacritty.yml"
 	;;
     neovim)
@@ -28,9 +24,6 @@ case "$choice" in
     ;;
     qutebrowser)
         choice="$HOME/.config/qutebrowser/autoconfig.yml"
-    ;;
-    vifm)
-        choice="$HOME/.config/vifm/vifmrc"
     ;;
     zsh)
         choice="$HOME/.zshrc"
