@@ -6,7 +6,6 @@ FUNCIONES INTERESANTES DE AÑADIR:
  - Cambiar los iconos de los layouts
  - Que al abrir correo o calendario abra una pestaña de Franz
  - Problema Spotify que al abrir no se abre en el grupo correcto
- - Hacer que cada vez que se abra una ventana flotante, aparezca arriba del todo
 
 """
 
@@ -44,6 +43,7 @@ screens = [
 def float_put_over(window):
     if window.floating:
         window.cmd_bring_to_front()
+# Makes new floating windows always stay at front
 
 dgroups_key_binder = None
 dgroups_app_rules = []  # type: List

@@ -26,7 +26,8 @@ group_names = [
        'layout': 'max',
        'layouts': [layouts[0], layouts[1], layouts[5]],
        'matches': [Match(
-            wm_class=['krusader', secondary_explorer]
+            wm_class=[explorer, secondary_explorer,
+                      'ranger', 'nomacs', 'xarchiver']
         )],
        'spawn': explorer,
        'label': group_list_names["MAN"]
@@ -34,11 +35,18 @@ group_names = [
    ("DEV",  {
        'layout': 'tile',
        'layouts': [layouts[3], layouts[6], layouts[8]],
+       'matches': [Match(
+            wm_class=['sublime_text', 'Atollic TrueSTUDIO for STM32',
+                      'jetbrains-pycharm-ce', 'kite', 'gedit']
+        )],
        'label': group_list_names["DEV"]
     }),
    ("VAR",  {
        'layout': 'monadtall',
        'layouts': layouts,
+       'matches': [Match(
+            wm_class=['prepros']
+        )],
        'label': group_list_names["VAR"]
     }),
    ("CHAT",  {
@@ -54,7 +62,7 @@ group_names = [
        'layout': 'max',
        'layouts': [layouts[0]],
        'matches': [Match(
-           wm_class=['Spotify', 'spotify'],
+           wm_class=['Spotify', 'spotify', 'vlc'],
            title=['Spotify']
         )],
        'label': group_list_names["MULT"]
@@ -76,7 +84,8 @@ group_names = [
        'layout': 'monadtall',
        'layouts': [layouts[0], layouts[5]],
        'matches': [Match(wm_class=[
-           'lxappearance', 'pavucontrol'
+           'lxappearance', 'pavucontrol', 
+           'gpartedbin', 'grub-customizer'
         ])],
        'label': group_list_names["CONF"]
     }),

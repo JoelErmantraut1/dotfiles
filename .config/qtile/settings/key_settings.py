@@ -199,6 +199,11 @@ keys = [
         desc="Opens options to edit config files"
     ),
     Key(
+        [mod, alt], "p",
+        lazy.spawn(HOME + "/.config/dmenu/dmenu-passmenu.sh"),
+        desc="Opens a password selector"
+    ),
+    Key(
         [mod, alt], "w",
         lazy.function(run_or_go("franz")),
         desc="Opens Franz social media manager"
