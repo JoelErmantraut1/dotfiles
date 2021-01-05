@@ -174,15 +174,6 @@ widgets_bottom = [
         background = widget_colors[3][0],
         padding = 5,
     ),
-    widget_separator(widget_colors[5]),
-    widget_icons('ﮮ ', widget_colors[5]),
-    CheckUpdates(
-        font=common_font,
-        padding = 4,
-        background=widget_colors[5][0],
-        foreground=colors[2],
-        mouse_callbacks = {'Button1': lambda qtile: qtile.cmd_spawn(terminal + ' -e sudo pacman -Syu')}
-    ),
     widget_separator(widget_colors[4]),
     widget_icons(' ', widget_colors[4]),
     widget.Clock(
