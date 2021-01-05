@@ -1,0 +1,22 @@
+[Default Applications]
+text/x-python=sublime_text.desktop
+image/png=org.nomacs.ImageLounge.desktop
+application/x-xz-compressed-tar=userapp-tar -vxf-4RP3V0.desktop
+application/pdf=FoxitReader.desktop
+application/ppdf=FoxitReader.desktop
+image/jpeg=org.nomacs.ImageLounge.desktop
+x-scheme-handler/kite=kite-copilot.desktop
+application/x-shellscript=Alacritty.desktop
+text/plain=sublime_text.desktop
+inode/directory=org.kde.krusader.desktop
+
+[Added Associations]
+text/x-python=org.gnome.gedit.desktop;sublime_text.desktop;
+image/png=feh.desktop;org.nomacs.ImageLounge.desktop;
+application/x-xz-compressed-tar=userapp-tar -vxf-4RP3V0.desktop;
+application/pdf=foxitreader.desktop;
+image/jpeg=org.nomacs.ImageLounge.desktop;
+application/x-bittorrent=xdman.desktop;
+application/x-shellscript=Alacritty.desktop;
+text/plain=org.gnome.gedit.desktop;sublime_text.desktop;
+inode/directory=org.kde.krusader.desktop;
