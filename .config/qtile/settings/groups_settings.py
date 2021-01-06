@@ -37,7 +37,8 @@ group_names = [
        'layouts': [layouts[3], layouts[6], layouts[8]],
        'matches': [Match(
             wm_class=['sublime_text', 'Atollic TrueSTUDIO for STM32',
-                      'jetbrains-pycharm-ce', 'kite', 'gedit']
+                      'jetbrains-pycharm-ce', 'kite', 'gedit',
+                      'jetbrains-studio']
         )],
        'label': group_list_names["DEV"]
     }),

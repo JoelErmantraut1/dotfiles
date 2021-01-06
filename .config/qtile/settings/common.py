@@ -20,6 +20,7 @@ captures_path = HOME + "/Imagenes/Capturas"
 calculator_title = "Qalculate!"
 explorer = 'krusader'
 secondary_explorer = 'pcmanfm'
+note_app = 'gnote'
 # Apps
 
 common_font = "Ubuntu Mono"

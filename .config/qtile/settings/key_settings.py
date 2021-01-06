@@ -3,7 +3,7 @@
 from libqtile.config import Key
 from libqtile.lazy import lazy
 
-from settings.common import mod, ctrl, shift, alt, terminal, group_list_names, navigator, explorer, secondary_explorer, unmute_command, mute_toggle_command, volume_down_command, volume_up_command, icons_font, HOME, captures_path
+from settings.common import mod, ctrl, shift, alt, terminal, group_list_names, navigator, explorer, secondary_explorer, unmute_command, mute_toggle_command, volume_down_command, volume_up_command, icons_font, HOME, captures_path, note_app
 from settings.functions import get_screen_resolution, kill_all_windows, minimize_group, run_or_go, run_or_bring, run_or_exit, show_hotkeys
 
 # Imports
@@ -159,6 +159,11 @@ keys = [
         [mod, shift], "space",
         lazy.spawn("rofi -combi-modi window,drun -show combi -modi combi"),
         desc="Starts Rofi launcher"
+    ),
+    Key(
+        [mod, alt], "a",
+        lazy.function(run_or_bring(note_app)),
+        desc="Starts the default note application"
     ),
     Key(
         [mod, alt], "e",
