@@ -23,7 +23,7 @@ case "$choice" in
         choice="$HOME/.config/qtile/config.py"
     ;;
     qutebrowser)
-        choice="$HOME/.config/qutebrowser/autoconfig.yml"
+        choice="$HOME/.config/qutebrowser/config.py"
     ;;
     zsh)
         choice="$HOME/.zshrc"

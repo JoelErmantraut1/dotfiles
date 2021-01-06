@@ -5,8 +5,16 @@ export TERMINAL=alacritty
 export VISUAL=subl
 export EDITOR=nvim
 
+export ANDROID_SDK_ROOT=/home/datos/android_sdk
+export ANDROID_HOME=/home/joel/android-studio/bin
+
+export PATH=$PATH:/home/datos/android_sdk/tools
+export PATH=$PATH:/home/datos/android_sdk/tools/bin
+export PATH=$PATH:/home/datos/android_sdk/platform-tools
+
 export PATH=$PATH:/home/joel/.local/bin
 export PATH=$PATH:/home/joel/pycharm-community-2020.3.1/bin/
+export PATH=$PATH:/home/joel/android-studio/bin
 # Path to your oh-my-zsh installation.
 export ZSH="/home/joel/.oh-my-zsh"
 

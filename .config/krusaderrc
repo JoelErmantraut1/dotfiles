@@ -105,7 +105,7 @@ Layout=krusader:compact
 [Private]
 Command Execution Mode=0
 PopularUrls=file:///home/joel/Documentos/Centro/hello/,file:///home/joel/,file:///home/joel/Downloads/,file:///home/joel/.config/,file:///home/joel/Documentos/Centro/,file:///home/joel/android-studio/bin/,file:///home/joel/android-studio/,file:///home/joel/Downloads/android-studio/,file:///home/,file:///,file:///home/datos/,file:///home/joel/.electron-gyp/,file:///dev/,trash:/,file:///home/joel/Documentos/,file:///home/joel/.config/Pinta/,file:///home/joel/.java/,file:///home/joel/.icons/
-PopularUrlsRank=16,14,11,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+PopularUrlsRank=13,11,10,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Start Position=0,20
 Start Size=1366,728
 cmdline history=
@@ -134,7 +134,7 @@ Url=file:///home/joel/Documentos/Centro
 
 [Startup][Left Tab Bar][Tabs][Tab0][History]
 CurrentIndex=0
-CurrentItems=hello,..,hello
+CurrentItems=,..,hello
 Entrys=file:///home/joel/Documentos/Centro,file:///home/joel/Documentos/Centro/hello,file:///home/joel/Documentos/Centro
 
 [Startup][Left Tab Bar][Tabs][Tab0][View]
