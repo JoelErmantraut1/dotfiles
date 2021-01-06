@@ -35,19 +35,33 @@ volume_down_command = "amixer -D pulse sset Master {0}%-".format(volume_step)
 # Commands
 
 group_list_names = {
-        "TERM": " ",
-        "WEB": " ",
-        "MAN": " ",
-        "DEV": " ",
-        "VAR": " ",
-        "CHAT": " ",
-        "MULT": "",
-        "VBOX": " ",
-        "FLT": " ",
-        "CONF": " ",
-        "AUX": ""
+    "TERM": " ",
+    "WEB": " ",
+    "MAN": " ",
+    "DEV": " ",
+    "VAR": " ",
+    "CHAT": " ",
+    "MULT": "",
+    "VBOX": " ",
+    "FLT": " ",
+    "CONF": " ",
+    "AUX": ""
 }
 # Spaces are added to center the icons
+
+group_list_keys = [
+    'exclam',
+    'quotedbl',
+    'numbersign',
+    'dollar',
+    'percent',
+    'ampersand',
+    'slash',
+    'parenleft',
+    'parenright',
+    'equal'
+]
+# Numbers associated with icons in keyboard layout
 
 # Groups
 

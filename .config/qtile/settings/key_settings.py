@@ -3,7 +3,7 @@
 from libqtile.config import Key
 from libqtile.lazy import lazy
 
-from settings.common import mod, ctrl, shift, alt, terminal, group_list_names, navigator, explorer, secondary_explorer, unmute_command, mute_toggle_command, volume_down_command, volume_up_command, icons_font, HOME, captures_path, note_app
+from settings.common import mod, ctrl, shift, alt, terminal, group_list_names, group_list_keys, navigator, explorer, secondary_explorer, unmute_command, mute_toggle_command, volume_down_command, volume_up_command, icons_font, HOME, captures_path, note_app
 from settings.functions import get_screen_resolution, kill_all_windows, minimize_group, run_or_go, run_or_bring, run_or_exit, show_hotkeys
 
 # Imports
@@ -283,14 +283,12 @@ keys = [
 ]
 
 names = list(group_list_names.keys())
-len_names = len(names) if len(names) < 10 else 9
+len_names = len(names) if len(names) < 10 else 10
 for i in range(len_names):
-    keys.append(Key([mod], str(i + 1), lazy.group[names[i]].toscreen()))        # Switch to another group
-    keys.append(Key([mod, shift], str(i + 1), lazy.window.togroup(names[i])))   # Send current window to another group
-keys.append(Key([mod], "0", lazy.group[names[9]].toscreen()))
-keys.append(Key([mod, shift], "0", lazy.window.togroup(names[9])))
-# To add tenth group related with 0
-for i in range(1, len(names) - len_names):
-    keys.append(Key([mod, ctrl], str(i), lazy.group[names[i + len_names]].toscreen()))
-    keys.append(Key([mod, ctrl, shift], str(i), lazy.window.togroup(names[i + len_names])))
+    keys.append(Key([mod], group_list_keys[i], lazy.group[names[i]].toscreen()))        # Switch to another group
+    keys.append(Key([mod, shift], group_list_keys[i], lazy.window.togroup(names[i])))   # Send current window to another group
+
+for i in range(0, len(names) - len_names):
+    keys.append(Key([mod, ctrl], group_list_keys[i], lazy.group[names[i + len_names]].toscreen()))
+    keys.append(Key([mod, ctrl, shift], group_list_keys[i], lazy.window.togroup(names[i + len_names])))
 # To add more than 10 groups
