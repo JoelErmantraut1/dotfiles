@@ -27,7 +27,8 @@ group_names = [
        'layouts': [layouts[0], layouts[1], layouts[5]],
        'matches': [Match(
             wm_class=[explorer, secondary_explorer,
-                      'ranger', 'nomacs', 'xarchiver']
+                      'ranger', 'nomacs', 'xarchiver',
+                      'file-roller']
         )],
        'spawn': explorer,
        'label': group_list_names["MAN"]
@@ -63,8 +64,7 @@ group_names = [
        'layout': 'max',
        'layouts': [layouts[0]],
        'matches': [Match(
-           wm_class=['Spotify', 'spotify', 'vlc'],
-           title=['Spotify']
+           wm_class=['Spotify', 'spotify', 'vlc']
         )],
        'label': group_list_names["MULT"]
     }),
