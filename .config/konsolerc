@@ -1,6 +1,9 @@
 [Desktop Entry]
 DefaultProfile=
 
+[KonsoleWindow]
+ShowMenuBarByDefault=false
+
 [MainWindow]
 HDMI-1 Height 768=354
 HDMI-1 Width 1366=1356
@@ -10,6 +13,9 @@ HDMI-A-0 Height 768=718
 HDMI-A-0 Width 1366=673
 HDMI-A-0 XPosition=686
 HDMI-A-0 YPosition=23
-RestorePositionForNextInstance=false
-State=AAAA/wAAAAD9AAAAAAAAAqEAAAK4AAAABAAAAAQAAAAIAAAACPwAAAAA
+MenuBar=Disabled
+State=AAAA/wAAAAD9AAAAAAAAAqEAAALOAAAABAAAAAQAAAAIAAAACPwAAAAA
 ToolBarsMovable=Disabled
+
+[TabBar]
+NewTabButton=true

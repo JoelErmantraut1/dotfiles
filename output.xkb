@@ -1582,7 +1582,7 @@ xkb_symbols "pc_latam_inet(evdev)" {
         type[group2]= "ONE_LEVEL",
         type[group3]= "ONE_LEVEL",
         type[group4]= "ONE_LEVEL",
-        symbols[Group1]= [               m,               M,              mu,       masculine ],
+        symbols[Group1]= [               m,               M,              mu,       0 ],
         symbols[Group2]= [               m ],
         symbols[Group3]= [              mu ],
         symbols[Group4]= [       masculine ]
