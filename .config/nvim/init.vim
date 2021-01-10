@@ -176,7 +176,7 @@ nmap <leader>mm :MinimapToggle<CR>
 " Configuracion de EasyMotion
 map  / <Plug>(easymotion-sn)
 omap / <Plug>(easymotion-tn)
-nnoremap <leader>7 :noh<CR>
+nnoremap <leader>/ :noh<CR>
 let g:EasyMotion_smartcase = 1
 " Con esto v encuentra v y V, pero V solo encuentra V
 
