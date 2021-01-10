@@ -54,10 +54,9 @@ group_names = [
    ("CHAT",  {
        'layout': 'max',
        'layouts': [layouts[0], layouts[1], layouts[6]],
-       'matches': [Match(wm_class=[
-           'whatsdesk', 'Telegram',
-           'franz'
-        ])],
+       'matches': [Match(
+          wm_class=['whatsdesk', 'Telegram','franz']
+        )],
        'label': group_list_names["CHAT"]
     }),
    ("MULT",  {

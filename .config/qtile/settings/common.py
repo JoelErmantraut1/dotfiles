@@ -75,17 +75,30 @@ colors = [
     ["#15C9EE", "#15C9EE"]
 ] # window name
 
+# widget_colors = [
+#     [["#668bd7", "#668bd7"], ["#60119D", "#60119D"]], # Temperature
+#     [["#FF8E24", "#FF8E24"], ["#668bd7", "#668bd7"]], # Volume
+#     [["#1F9C73", "#1F9C73"], ["#FF8E24", "#FF8E24"]], # Keyboard
+#     [["#006A74", "#006A74"], ["#1F9C73", "#1F9C73"]], # Layout
+#     [["#FF6666", "#FF6666"], ["#006A74", "#006A74"]], # Date
+#     [["#292d3e", "#292d3e"], ["#006A74", "#006A74"]], # CheckUpdates
+#     [["#60119D", "#60119D"], ["#0C2F66", "#0C2F66"]], # RAM
+#     [["#0C2F66", "#0C2F66"], ["#FFDA00", "#FFDA00"]], # CPU
+#     [["#FFDA00", "#FFDA00"], ["#292d3e", "#292d3e"]], # Wallpaper change widget
+# ]
+
 widget_colors = [
     [["#668bd7", "#668bd7"], ["#60119D", "#60119D"]], # Temperature
-    [["#FF8E24", "#FF8E24"], ["#668bd7", "#668bd7"]], # Volume
-    [["#1F9C73", "#1F9C73"], ["#FF8E24", "#FF8E24"]], # Keyboard
-    [["#006A74", "#006A74"], ["#1F9C73", "#1F9C73"]], # Layout
-    [["#FF6666", "#FF6666"], ["#006A74", "#006A74"]], # Date
-    [["#292d3e", "#292d3e"], ["#006A74", "#006A74"]], # CheckUpdates
-    [["#60119D", "#60119D"], ["#0C2F66", "#0C2F66"]], # RAM
-    [["#0C2F66", "#0C2F66"], ["#FFDA00", "#FFDA00"]], # CPU
-    [["#FFDA00", "#FFDA00"], ["#292d3e", "#292d3e"]], # Wallpaper change widget
+    [["#60119D", "#60119D"], ["#668bd7", "#668bd7"]], # Volume
+    [["#668bd7", "#668bd7"], ["#60119D", "#60119D"]], # Keyboard
+    [["#60119D", "#60119D"], ["#668bd7", "#668bd7"]], # Layout
+    [["#668bd7", "#668bd7"], ["#60119D", "#60119D"]], # Date
+    [["#60119D", "#60119D"], ["#668bd7", "#668bd7"]], # CheckUpdates
+    [["#60119D", "#60119D"], ["#668bd7", "#668bd7"]], # RAM
+    [["#668bd7", "#668bd7"], ["#60119D", "#60119D"]], # CPU
+    [["#60119D", "#60119D"], ["#292d3e", "#292d3e"]], # Wallpaper change widget
 ]
+
 # Background first
 # Foreground second
 

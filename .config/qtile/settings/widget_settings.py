@@ -10,29 +10,29 @@ import threading, subprocess
 
 # Imports
 
-class CheckUpdates(base._TextBox):
+# class CheckUpdates(base._TextBox):
 
-    def __init__(self, **config):
-        base._TextBox.__init__(self, text="N/A", **config)
-        self.text = None
-        self.update_time = 1800
-        self.no_updates_string = "N/A"
-        self.update()
-        threading.Timer(10, self.update).start()
+#     def __init__(self, **config):
+#         base._TextBox.__init__(self, text="N/A", **config)
+#         self.text = None
+#         self.update_time = 1800
+#         self.no_updates_string = "N/A"
+#         self.update()
+#         threading.Timer(10, self.update).start()
 
-    def get_updates(self):
-        result = subprocess.run(['checkupdates'], capture_output=True).stdout
-        result = len(result.decode().split("\n")) - 1
+#     def get_updates(self):
+#         result = subprocess.run(['checkupdates'], capture_output=True).stdout
+#         result = len(result.decode().split("\n")) - 1
 
-        if result == 0:
-            return self.no_updates_string
-        else:
-            return "Pacman: " + str(result)
+#         if result == 0:
+#             return self.no_updates_string
+#         else:
+#             return "Pacman: " + str(result)
 
-    def update(self):
-        self.text = self.get_updates()
+#     def update(self):
+#         self.text = self.get_updates()
 
-        threading.Timer(self.update_time, self.update).start()
+#         threading.Timer(self.update_time, self.update).start()
 
 # Own Widgets
 
@@ -106,14 +106,14 @@ widgets_bottom = [
     widget_separator(widget_colors[8]),
     widget.TextBox(
         text = " ",
-        foreground = colors[0],
+        foreground = colors[2],
         background = widget_colors[8][0],
         fontsize = 13,
         font = icons_font,
     ),
     widget.TextBox(
         text="Fondos",
-        foreground = colors[0],
+        foreground = colors[2],
         background = widget_colors[8][0],
         mouse_callbacks = {"Button1": change_wallpaper}
     ),
