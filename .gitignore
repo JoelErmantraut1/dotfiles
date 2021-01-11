@@ -4,3 +4,9 @@ __pycache__
 *.backup
 *.bak
 
+*/nvim/pack
+*/nvim/plugged
+*/nvim/undodir
+
+.git
+
