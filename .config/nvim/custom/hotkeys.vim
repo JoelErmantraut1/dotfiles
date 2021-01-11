@@ -1,0 +1,54 @@
+" General
+nnoremap <leader>s :w<CR>
+nnoremap <leader>q :q<CR>
+nnoremap <leader>qq :q!<CR>
+nnoremap <leader>fs :Files<CR>
+nnoremap <leader>u :UndotreeShow<CR>
+
+" Resize windows
+nnoremap <silent> <Left> :vertical resize +2<CR> 
+nnoremap <silent> <Up> :resize -2<CR>
+nnoremap <silent> <Down> :resize +2<CR>
+nnoremap <silent> <Right> :vertical resize -2<CR>
+
+" Tab Control
+nnoremap <leader>d :bnext<CR>
+nnoremap <leader>a :bprevious<CR>
+nnoremap <leader>w :bdelete<CR>
+" Splits
+nnoremap <leader>vs :vsp<space>
+nnoremap <leader>sp :sp<space>
+" Windows
+nnoremap <leader>h :wincmd h<CR>
+nnoremap <leader>j :wincmd j<CR>
+nnoremap <leader>k :wincmd k<CR>
+nnoremap <leader>l :wincmd l<CR>
+
+" Syntaxis
+vnoremap <expr> p '"_d"'.v:register.'p'
+vnoremap <expr> P '"_d"'.v:register.'P'
+" Retains clipboard after paste (not default)
+
+nnoremap <leader><F5> :source $HOME/.config/nvim/init.vim<CR>
+
+" Plugins
+map <leader>n :NERDTreeToggle<CR>
+
+nnoremap <leader>c :call NERDComment(0,"toggle")<CR>
+vnoremap <leader>c :call NERDComment(0, "toggle")<CR>
+
+nmap <leader>t :TagbarToggle<CR>
+
+nmap <leader>mm :MinimapToggle<CR>
+
+" EasyMotion
+map  / <Plug>(easymotion-sn)
+omap / <Plug>(easymotion-tn)
+nnoremap <silent> <esc> :noh<cr><esc>
+
+nnoremap <leader>e :ALEFix<CR>
+
+nnoremap <leader>r :ColorHighlight<CR>
+" Show colors with colors
+
+nnoremap <leader>u :UndotreeToggle<CR>
