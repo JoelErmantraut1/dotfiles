@@ -99,6 +99,7 @@ History Button Visible=false
 Media Button Visible=false
 Navigator Full Path=true
 Panel Toolbar visible=false
+Show Hidden=true
 Show Tab Buttons=false
 Single Instance Mode=true
 Sort method=1

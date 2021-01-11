@@ -239,7 +239,8 @@ keys = [
     ### Music Control
     Key(
         [], "XF86Tools",
-        lazy.function(run_or_go("spotify")),
+        lazy.group['MULT'].toscreen(),
+        lazy.spawn('spotify'),
         desc="Opens Spotify"
     ),
     Key(
