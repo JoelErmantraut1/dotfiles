@@ -86,6 +86,7 @@ colors = [
 #     [["#0C2F66", "#0C2F66"], ["#FFDA00", "#FFDA00"]], # CPU
 #     [["#FFDA00", "#FFDA00"], ["#292d3e", "#292d3e"]], # Wallpaper change widget
 # ]
+# This is another color scheme
 
 widget_colors = [
     [["#668bd7", "#668bd7"], ["#60119D", "#60119D"]], # Temperature

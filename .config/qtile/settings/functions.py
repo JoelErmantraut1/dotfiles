@@ -49,7 +49,6 @@ def run_or_go(app):
         for group in qtile.groups:
             for window in group.windows:
                 inspection = window.cmd_inspect()
-                # app_name = inspection["wm_class"][0].split(" ")[0].lower()
                 app_name = re.search(r"[a-z]*", inspection["wm_class"][0].lower()).group(0)
                 # Gets the first word separated by any non-alfabetic character
 

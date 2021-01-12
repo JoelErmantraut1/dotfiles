@@ -1,11 +1,10 @@
 """
+INTERESTING FUNCTION TO ADD:
 
-FUNCIONES INTERESANTES DE AÑADIR:
-
- - Terminar con los hotkeys
- - Cambiar los iconos de los layouts
- - Que al abrir correo o calendario abra una pestaña de Franz
- - Problema Spotify que al abrir no se abre en el grupo correcto
+    - Finish with hotkeys (do images)
+    - Change icons on layouts
+    - That when I want to open calendar, can open Franz in Calendar tab
+    - Spotify problem, not starting in the correct group
 
 """
 
@@ -16,7 +15,7 @@ from libqtile.config import Screen
 
 from settings.common import colors
 from settings.mouse import mouse
-# from settings.hooks import albert_open
+from settings.hooks import float_put_over  
 from settings.key_settings import keys
 from settings.groups_settings import groups
 from settings.layouts_settings import floating_layout
@@ -38,12 +37,6 @@ screens = [
     ),
     Screen() # For projection if needed
 ]
-
-@hook.subscribe.client_focus
-def float_put_over(window):
-    if window.floating:
-        window.cmd_bring_to_front()
-# Makes new floating windows always stay at front
 
 dgroups_key_binder = None
 dgroups_app_rules = []  # type: List

@@ -8,13 +8,20 @@ from libqtile.config import Group, Match
 group_names = [
    ("TERM",  {
        'layout': 'monadtall',
-       'layouts': [layouts[4], layouts[5], layouts[6]],
+       'layouts': [
+           layouts['matrix'],
+           layouts['monadtall'],
+           layouts['monadwide']
+        ],
        'spawn': terminal,
        'label': group_list_names["TERM"]
        }),
    ("WEB",  {
        'layout': 'max',
-       'layouts': [layouts[0], layouts[9]],
+       'layouts': [
+           layouts['max'],
+           layouts['treetab']
+        ],
        'matches': [Match(wm_class=[
             "Firefox", "Opera", "Google-chrome",
             "Chromium", "brave-browser", "qutebrowser"
@@ -24,7 +31,11 @@ group_names = [
     }),
    ("MAN",  {
        'layout': 'max',
-       'layouts': [layouts[0], layouts[1], layouts[5]],
+       'layouts': [
+           layouts['max'],
+           layouts['stack'],
+           layouts['monadtall']
+        ],
        'matches': [Match(
             wm_class=[explorer, secondary_explorer,
                       'ranger', 'nomacs', 'xarchiver',
@@ -35,7 +46,11 @@ group_names = [
     }),
    ("DEV",  {
        'layout': 'tile',
-       'layouts': [layouts[3], layouts[6], layouts[8]],
+       'layouts': [
+           layouts['columns'],
+           layouts['monadwide'],
+           layouts['tile']
+        ],
        'matches': [Match(
             wm_class=['sublime_text', 'Atollic TrueSTUDIO for STM32',
                       'jetbrains-pycharm-ce', 'kite', 'gedit',
@@ -45,7 +60,8 @@ group_names = [
     }),
    ("VAR",  {
        'layout': 'monadtall',
-       'layouts': layouts,
+       'layouts': layouts.values(),
+       # Include all layouts
        'matches': [Match(
             wm_class=['prepros']
         )],
@@ -53,7 +69,11 @@ group_names = [
     }),
    ("CHAT",  {
        'layout': 'max',
-       'layouts': [layouts[0], layouts[1], layouts[6]],
+       'layouts': [
+           layouts['max'],
+           layouts['stack'],
+           layouts['monadwide']
+        ],
        'matches': [Match(
           wm_class=['whatsdesk', 'Telegram','franz']
         )],
@@ -61,7 +81,7 @@ group_names = [
     }),
    ("MULT",  {
        'layout': 'max',
-       'layouts': [layouts[0]],
+       'layouts': [layouts['max']],
        'matches': [Match(
            wm_class=['Spotify', 'spotify', 'vlc']
         )],
@@ -69,7 +89,10 @@ group_names = [
     }),
    ("VBOX",  {
        'layout': 'max',
-       'layouts': [layouts[0], layouts[1]],
+       'layouts': [
+           layouts['max'],
+           layouts['stack']
+        ],
        'matches': [Match(wm_class=[
            'VirtualBox Manager'
         ])],
@@ -77,12 +100,18 @@ group_names = [
     }),
    ("FLT",  {
        'layout': 'floating',
-       'layouts': [layouts[1], layouts[12]],
+       'layouts': [
+           layouts['stack'],
+           layouts['floating']
+        ],
        'label': group_list_names["FLT"]
     }),
    ("CONF", {
        'layout': 'monadtall',
-       'layouts': [layouts[0], layouts[5]],
+       'layouts': [
+           layouts['max'],
+           layouts['monadtall']
+        ],
        'matches': [Match(wm_class=[
            'lxappearance', 'pavucontrol', 
            'gpartedbin', 'grub-customizer'
@@ -91,7 +120,7 @@ group_names = [
     }),
    ("AUX", {
        'layout': 'monadtall',
-       'layouts': layouts,
+       'layouts': layouts.values(),
        'label': group_list_names["AUX"]
     })
 ]

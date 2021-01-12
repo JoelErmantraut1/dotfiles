@@ -3,8 +3,13 @@
 from libqtile.config import Key
 from libqtile.lazy import lazy
 
-from settings.common import mod, ctrl, shift, alt, terminal, group_list_names, group_list_keys, navigator, explorer, secondary_explorer, unmute_command, mute_toggle_command, volume_down_command, volume_up_command, icons_font, HOME, captures_path, note_app
-from settings.functions import get_screen_resolution, kill_all_windows, minimize_group, run_or_go, run_or_bring, run_or_exit, show_hotkeys
+from settings.common import (
+        mod, ctrl, shift, alt, terminal, group_list_names, group_list_keys, navigator, 
+        explorer, secondary_explorer, unmute_command, mute_toggle_command, volume_down_command,
+        volume_up_command, icons_font, HOME, captures_path, note_app)
+from settings.functions import (
+        get_screen_resolution, kill_all_windows, minimize_group, run_or_go,
+        run_or_bring, run_or_exit, show_hotkeys)
 
 # Imports
 
