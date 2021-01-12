@@ -52,3 +52,6 @@ nnoremap <leader>r :ColorHighlight<CR>
 " Show colors with colors
 
 nnoremap <leader>u :UndotreeToggle<CR>
+
+vnoremap <leader>kk :Cheat<CR>
+" To search in cht.sh
