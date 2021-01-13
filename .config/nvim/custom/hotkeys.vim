@@ -38,19 +38,21 @@ nnoremap <leader><F5> :source $HOME/.config/nvim/init.vim<CR>
 " Plugins
 map <leader>n :NERDTreeToggle<CR>
 
-nnoremap <leader>c :call NERDComment(0,"toggle")<CR>
+nnoremap <leader>c :call NERDComment(0, "toggle")<CR>
 vnoremap <leader>c :call NERDComment(0, "toggle")<CR>
 
 nmap <leader>t :TagbarToggle<CR>
 
 nmap <leader>mm :MinimapToggle<CR>
 
-" EasyMotion
 map  / <Plug>(easymotion-sn)
 omap / <Plug>(easymotion-tn)
 nnoremap <silent> <esc> :noh<cr><esc>
+" EasyMotion
 
-nnoremap <leader>e :ALEFix<CR>
+vmap <leader>f <Plug>(coc-format-selected)
+nmap <leader>f <Plug>(coc-format-selected)
+" Format code
 
 nnoremap <leader>r :ColorHighlight<CR>
 " Show colors with colors
