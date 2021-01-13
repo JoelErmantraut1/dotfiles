@@ -1,6 +1,6 @@
 " Configuracion de Kite
 map <leader>gd :KiteGotoDefinition<CR>
-map <leader>k :KiteDocsAtCursor<CR>
+map <leader>kk :KiteDocsAtCursor<CR>
 inoremap <c-p> <C-x><C-u>
 
 set completeopt+=menuone

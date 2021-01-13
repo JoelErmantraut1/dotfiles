@@ -29,6 +29,10 @@ vnoremap <expr> p '"_d"'.v:register.'p'
 vnoremap <expr> P '"_d"'.v:register.'P'
 " Retains clipboard after paste (not default)
 
+vnoremap > >gv
+vnoremap < <gv
+" To stay in visual mode after indent
+
 nnoremap <leader><F5> :source $HOME/.config/nvim/init.vim<CR>
 
 " Plugins
