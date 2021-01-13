@@ -12,7 +12,7 @@ This repository has all the config files that I have in my Arch Linux instalatio
 - Rofi is installed too. It is useful for change windows, run some aplicattions and for Rofimoji.
 - The default web browser is Brave Browser.
 - The default file manager is Krusader. It is also configured PCmanFM.
-- There are also config files for lots of other apps.
+- There are config files for lots of other apps.
 
 ## Adittional
-- It is configured a special keyboard layout, a variation of the default latam layout. For that purposes are the files "output.xkb" and ".Xmodmap".
+- It is configured a special keyboard layout, a variation of the default latam layout. For that are the files "output.xkb" and ".Xmodmap".
