@@ -14,12 +14,7 @@ Plug 'dbeniamine/cheat.sh-vim' " To search in cht.sh directly from vim
 Plug 'frazrepo/vim-rainbow' " Shows rainbow brackets and others 
 Plug 'preservim/nerdcommenter' " Comments Code
 Plug 'nathanaelkane/vim-indent-guides' " See guides identation 
-" Plug 'neoclide/coc-pairs', {'branch': 'release'}
-" Plug 'neoclide/coc-eslint', {'branch': 'release'}
-" Plug 'neoclide/coc-prettier', {'branch': 'release'}
 Plug 'chrisbra/colorizer' " Shows colors with colors 
-" Plug 'jiangmiao/auto-pairs' " Cierra parentesis, corchetes, etc
-" Plug 'dense-analysis/ale' " ALE: Tiene muchas funciones, pero uso Lint y Fi
 
 " Syntax Highlighting
 Plug 'digitaltoad/vim-pug'
@@ -36,5 +31,6 @@ Plug 'majutsushi/tagbar'
 Plug 'mattn/emmet-vim' " Emmet
 Plug 'easymotion/vim-easymotion' " Search in code 
 Plug 'neoclide/coc.nvim', {'branch': 'release'} " Autocompletion 
+" Installed with Coc: coc-prettier and coc-pairs
 
 call plug#end()

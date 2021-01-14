@@ -29,11 +29,18 @@ vnoremap <expr> p '"_d"'.v:register.'p'
 vnoremap <expr> P '"_d"'.v:register.'P'
 " Retains clipboard after paste (not default)
 
+nnoremap q <c-v>
+" Use to enter in block visual mode
+" Cannot use Ctrl+V directly because it is
+" intercepted by Alacritty config
+
 vnoremap > >gv
 vnoremap < <gv
 " To stay in visual mode after indent
 
 nnoremap <leader><F5> :source $HOME/.config/nvim/init.vim<CR>
+" Source Neovim config, useful when working with separated config
+" files
 
 " Plugins
 map <leader>n :NERDTreeToggle<CR>

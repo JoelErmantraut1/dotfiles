@@ -28,7 +28,7 @@ set clipboard=unnamed
 " With this vim uses primary clipboard
 set guicursor= " Cursor is always a block
 set nohlsearch
-set scrolloff=10 " Centers the cursor when near EOF
+set scrolloff=5 " Centers the cursor when near EOF
 set signcolumn=yes " Use for linters and git apps
 
 set cmdheight=2 " More space for messages

@@ -10,7 +10,7 @@ let g:NERDTreeChDirMode = 1 " Cambia el directorio actual al nodo padre actual
 
 " NERDCommenter
 let g:NERDCreateDefaultMappings = 0
-let g:NERDSpaceDelims = 1
+let g:NERDSpaceDelims = 0
 
 " Emmet
 let g:user_emmet_leader_key='<C-X>'
@@ -22,9 +22,6 @@ let g:user_emmet_install_global = 0
 let g:EasyMotion_smartcase = 1
 " v finds v and V, but V finds V only
 
-" ALE
-let g:ale_fixers = ['prettier']
-let g:ale_fix_on_save_ignore=1
 " Python Syntaxis
 let g:python_highlight_all = 1
 
