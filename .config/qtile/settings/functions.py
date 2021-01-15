@@ -67,7 +67,7 @@ def run_or_bring(app):
     """
     If app is open, send it to current group. Otherwise, open it in current group.
     """
-    def f(qtile):
+    def f_0(qtile):
         success = 0
         for group in qtile.groups:
             for window in group.windows:
@@ -84,13 +84,13 @@ def run_or_bring(app):
         if not success:
             qtile.cmd_spawn(app)
 
-    return f
+    return f_0
 
 def run_or_exit(app):
     """
     If app is open, closes it. Otherwise, opens the app.
     """
-    def f(qtile):
+    def f_1(qtile):
         success = 0
         for group in qtile.groups:
             for window in group.windows:
@@ -107,7 +107,7 @@ def run_or_exit(app):
         if not success:
             qtile.cmd_spawn(app)
 
-    return f
+    return f_1
 
 @lazy.function
 def show_hotkeys(qtile):

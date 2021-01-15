@@ -137,7 +137,7 @@ keys = [
         desc="Open explorer"
     ),
     Key([mod], "v",
-        lazy.spawn('clipmenu -p "»"'),
+        lazy.spawn('clipster -s -c'),
         desc='Opens clipboard manager'
     ),
     Key([mod], "g",
@@ -202,11 +202,6 @@ keys = [
         [mod, alt], "v",
         lazy.function(run_or_go("virtualbox")),
         desc="Opens Virtual Box"
-    ),
-    Key(
-        [mod, alt], "d",
-        lazy.spawn(HOME + "/.config/dmenu/dmenu-edit-configs.sh"),
-        desc="Opens options to edit config files"
     ),
     Key(
         [mod, alt], "p",

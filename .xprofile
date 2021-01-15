@@ -4,7 +4,7 @@ picom -f &
 xset -b &
 xset s off -dpms &
 xhost + &
-clipmenud &
+clipster -d &
 udiskie &
 xmodmap ~/.Xmodmap &
 xkbcomp output.xkb $DISPLAY &

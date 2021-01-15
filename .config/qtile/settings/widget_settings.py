@@ -1,7 +1,11 @@
 # -*- coding: utf-8 -*-
 
 from settings.common import *
-from settings.functions import get_screen_resolution, spacers, separator, widget_separator, widget_icons, change_wallpaper
+from settings.functions import (
+    get_screen_resolution, spacers, separator, 
+    widget_separator, widget_icons, change_wallpaper,
+    run_or_go, run_or_bring
+)
 
 from libqtile import widget
 from libqtile.widget import base
@@ -11,28 +15,28 @@ import threading, subprocess
 # Imports
 
 # class CheckUpdates(base._TextBox):
+    # """Widget to see updates available."""
+    # def __init__(self, **config):
+        # base._TextBox.__init__(self, text="N/A", **config)
+        # self.text = None
+        # self.update_time = 1800
+        # self.no_updates_string = "N/A"
+        # self.update()
+        # threading.Timer(10, self.update).start()
 
-#     def __init__(self, **config):
-#         base._TextBox.__init__(self, text="N/A", **config)
-#         self.text = None
-#         self.update_time = 1800
-#         self.no_updates_string = "N/A"
-#         self.update()
-#         threading.Timer(10, self.update).start()
+    # def get_updates(self):
+        # result = subprocess.run(['checkupdates'], capture_output=True).stdout
+        # result = len(result.decode().split("\n")) - 1
 
-#     def get_updates(self):
-#         result = subprocess.run(['checkupdates'], capture_output=True).stdout
-#         result = len(result.decode().split("\n")) - 1
+        # if result == 0:
+            # return self.no_updates_string
+        # else:
+            # return "Pacman: " + str(result)
 
-#         if result == 0:
-#             return self.no_updates_string
-#         else:
-#             return "Pacman: " + str(result)
+    # def update(self):
+        # self.text = self.get_updates()
 
-#     def update(self):
-#         self.text = self.get_updates()
-
-#         threading.Timer(self.update_time, self.update).start()
+        # threading.Timer(self.update_time, self.update).start()
 
 # Own Widgets
 
@@ -181,7 +185,7 @@ widgets_bottom = [
         background = widget_colors[4][0],
         format = "%a - %d/%m - %H:%M",
         mouse_callbacks = {
-            'Button1': lambda qtile: qtile.cmd_spawn("zenity --calendar --text=''"),
+            'Button1': lambda qtile: qtile.cmd_function(run_or_go("zenity --calendar --text=''")),
             'Button3': lambda qtile: qtile.cmd_function(run_or_go("franz"))
         }
     )
