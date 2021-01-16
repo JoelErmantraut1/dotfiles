@@ -156,15 +156,13 @@ widgets_bottom = [
         padding = 5,
         step = volume_step
     ),
-    # Para que el volumen funcione bien, instalar
-    # alsa-utils, pulseaudio y pulseaudio-alsa
-    widget_separator(widget_colors[2]),
-    widget_icons(" ", widget_colors[2]),
-    widget.KeyboardLayout(
-        foreground = colors[2],
-        background = widget_colors[2][0],
-        configured_keyboards=['latam', 'dvorak']
-    ),
+    # widget_separator(widget_colors[2]),
+    # widget_icons(" ", widget_colors[2]),
+    # widget.KeyboardLayout(
+        # foreground = colors[2],
+        # background = widget_colors[2][0],
+        # configured_keyboards=['latam', 'dvorak']
+    # ),
     widget_separator(widget_colors[3]),
     widget.CurrentLayoutIcon(
         # custom_icon_paths = [HOME + "/.config/qtile/icons"],
