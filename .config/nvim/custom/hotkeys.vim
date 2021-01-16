@@ -55,6 +55,7 @@ nmap <leader>mm :MinimapToggle<CR>
 map  / <Plug>(easymotion-sn)
 omap / <Plug>(easymotion-tn)
 nnoremap <silent> <esc> :noh<cr><esc>
+" Last line not needed
 " EasyMotion
 
 vmap <leader>f <Plug>(coc-format-selected)

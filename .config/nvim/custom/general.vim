@@ -40,6 +40,8 @@ filetype plugin indent on
 
 set whichwrap+=>,l
 set whichwrap+=<,h
+" To overflow to the last or the previous
+" line when press arrows
 
 let mapleader = " "
 " Tecla modificadora (leader)
