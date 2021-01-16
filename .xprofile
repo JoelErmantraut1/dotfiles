@@ -1,3 +1,4 @@
+xrandr -s 1366x768 &
 setxkbmap latam &
 nitrogen --random --set-zoom-fill &
 picom -f &
