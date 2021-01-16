@@ -2,6 +2,7 @@
 
 import subprocess
 import re
+import screeninfo
 
 from libqtile.lazy import lazy
 from libqtile import widget
@@ -14,17 +15,11 @@ def get_screen_resolution():
     """
     Gets screen resolution.
     """
-    cmd = ['xrandr']
-    cmd2 = ['grep', '*']
-    p = subprocess.Popen(cmd, stdout=subprocess.PIPE)
-    p2 = subprocess.Popen(cmd2, stdin=p.stdout, stdout=subprocess.PIPE)
-    p.stdout.close()
-    resolution_string, junk = p2.communicate()
-    resolution = resolution_string.split()[0]
+    screen = screeninfo.get_monitors()[0]
+    width = screen.width
+    height = screen.height
 
-    width, height = resolution.decode('utf-8').split("x")
-
-    return int(width), int(height)
+    return width, height
 
 @lazy.function
 def kill_all_windows(qtile):
