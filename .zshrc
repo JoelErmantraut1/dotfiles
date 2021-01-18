@@ -92,7 +92,6 @@ plugins+=(virtualenv)
 plugins+=(copyfile)
 # Para copiar el contenido de un archivo en el portapapeles
 plugins+=(web-search)
-plugins+=(zsh-interactive-cd)
 plugins+=(wd)
 # Genera bookmarks de las carpetas
 plugins+=(pass)
@@ -142,4 +141,9 @@ prompt_context() {
   if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
     prompt_segment black default "%(!.%{%F{yellow}%}.)$USER"
   fi
+}
+
+f() {
+    fff "$@"
+    cd "$(cat "${XDG_CACHE_HOME:=${HOME}/.cache}/fff/.fff_d")"
 }
