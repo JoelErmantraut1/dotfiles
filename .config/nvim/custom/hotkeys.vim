@@ -14,7 +14,7 @@ nnoremap <silent> <Right> :vertical resize -2<CR>
 " Tab Control
 nnoremap <leader>d :bnext<CR>
 nnoremap <leader>a :bprevious<CR>
-nnoremap <leader>w :bdelete<CR>
+nnoremap <leader>w :bdelete!<CR>
 " Splits
 nnoremap <leader>vs :vsp<space>
 nnoremap <leader>sp :sp<space>
