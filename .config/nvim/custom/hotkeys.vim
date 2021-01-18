@@ -14,7 +14,7 @@ nnoremap <silent> <Right> :vertical resize -2<CR>
 " Tab Control
 nnoremap <leader>d :bnext<CR>
 nnoremap <leader>a :bprevious<CR>
-nnoremap <leader>w :bdelete!<CR>
+nnoremap <leader>w :bdelete<CR>
 " Splits
 nnoremap <leader>vs :vsp<space>
 nnoremap <leader>sp :sp<space>
@@ -42,6 +42,9 @@ nnoremap <leader><F5> :source $HOME/.config/nvim/init.vim<CR>
 " Source Neovim config, useful when working with separated config
 " files
 
+nnoremap <leader>m :FloatermNew --height=0.8 --width=0.8 --wintype=float --autoclose=1 --position=center<CR>
+" Opens a new instance of Floaterm
+
 " Plugins
 map <leader>n :NERDTreeToggle<CR>
 
@@ -66,6 +69,3 @@ nnoremap <leader>r :ColorHighlight<CR>
 " Show colors with colors
 
 nnoremap <leader>u :UndotreeToggle<CR>
-
-vnoremap <leader>kk :Cheat<CR>
-" To search in cht.sh

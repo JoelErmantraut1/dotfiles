@@ -2,13 +2,13 @@ call plug#begin(stdpath('config') . '/plugged')
 
 " Themes 
 Plug 'sainnhe/sonokai'
+Plug 'jacoborus/tender.vim'
 
 " Files 
 Plug 'preservim/nerdtree' " NERDTree
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim' " FZF
 Plug 'mbbill/undotree'
-Plug 'dbeniamine/cheat.sh-vim' " To search in cht.sh directly from vim
 
 " Syntaxis
 Plug 'frazrepo/vim-rainbow' " Shows rainbow brackets and others 
@@ -25,6 +25,7 @@ Plug 'vim-python/python-syntax'
 Plug 'itchyny/lightline.vim' " Status Bar 
 Plug 'KabbAmine/vCoolor.vim' " Color Selector
 Plug 'wfxr/minimap.vim' " Sublime-text minimap style
+Plug 'voldikss/vim-floaterm'
 
 " Codificacion
 Plug 'majutsushi/tagbar'

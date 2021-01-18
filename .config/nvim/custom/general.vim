@@ -45,5 +45,3 @@ set whichwrap+=<,h
 
 let mapleader = " "
 " Tecla modificadora (leader)
-
-

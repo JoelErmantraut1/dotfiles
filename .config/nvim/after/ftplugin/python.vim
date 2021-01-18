@@ -9,4 +9,4 @@ set completeopt+=preview
 autocmd CompleteDone * if !pumvisible() | pclose | endif
 set belloff+=ctrlg  " if vim beeps during completion
 
-nnoremap <leader>b :sp <CR> :term python % <CR>
+nnoremap <leader>b :FloatermNew --height=0.8 --width=0.8 --wintype=float --name=floaterm_python --autoclose=1 --position=center python % <CR><CR>
