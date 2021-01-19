@@ -4,5 +4,6 @@
 	"ignored_packages":
 	[
 		"Vintage"
-	]
+	],
+	"show_errors_inline": false,
 }
