@@ -15,6 +15,7 @@ Plug 'frazrepo/vim-rainbow' " Shows rainbow brackets and others
 Plug 'preservim/nerdcommenter' " Comments Code
 Plug 'nathanaelkane/vim-indent-guides' " See guides identation 
 Plug 'chrisbra/colorizer' " Shows colors with colors 
+Plug 'tbastos/vim-lua'
 
 " Syntax Highlighting
 Plug 'digitaltoad/vim-pug'
