@@ -4,7 +4,7 @@ from libqtile.config import Key
 from libqtile.lazy import lazy
 
 from settings.common import (
-        mod, ctrl, shift, alt, terminal, group_list_names, group_list_keys, navigator, 
+        mod, ctrl, shift, alt, terminal, group_list_names, group_list_keys, navigator,
         explorer, secondary_explorer, unmute_command, mute_toggle_command, volume_down_command,
         volume_up_command, icons_font, HOME, captures_path, note_app)
 from settings.functions import (
@@ -37,12 +37,12 @@ keys = [
         lazy.spawn(HOME + "/.config/dmenu/dmenu-session-options.sh"),
         desc="Log out qtile"
     ),
-    # Advanced commands
+    ### Advanced commands
     Key([mod, ctrl], "q",
         kill_all_windows,
         desc="Closes all windows"
     ),
-    # Window Control
+    ### Window Control
     Key([mod], "Tab",
         lazy.next_layout(),
         desc='Toggle through layouts'
@@ -114,7 +114,7 @@ keys = [
         lazy.layout.shuffle_up().when('tile'),
         desc='Move focus up in current stack pane'
     ),
-    # Groups Control
+    ### Groups Control
     Key([mod], "a",
         lazy.screen.toggle_group(),
         desc="Changes to the last group"
@@ -127,7 +127,7 @@ keys = [
         lazy.screen.next_group(),
         desc="Changes to the next group"
     ),
-    # Apps
+    ### Apps
     Key([mod], "p",
         lazy.spawncmd(),
         desc='Generates a prompt to enter commands'
@@ -140,7 +140,7 @@ keys = [
         lazy.spawn('clipster -s -c'),
         desc='Opens clipboard manager'
     ),
-    Key([mod], "g",
+    Key([mod], "period",
         lazy.spawn('rofimoji'),
         desc='Opens emojis selector'
     ),

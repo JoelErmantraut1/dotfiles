@@ -15,7 +15,7 @@ from libqtile.config import Screen
 
 from settings.common import colors
 from settings.mouse import mouse
-from settings.hooks import float_put_over  
+from settings.hooks import float_put_over
 from settings.key_settings import keys
 from settings.groups_settings import groups
 from settings.layouts_settings import floating_layout
