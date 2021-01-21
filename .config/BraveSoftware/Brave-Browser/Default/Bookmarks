@@ -1,5 +1,5 @@
 {
-   "checksum": "ff1a62c2fde3c4dc6f851cfdcf2576c5",
+   "checksum": "a2ab8f3eb6d4438e949f04926a15d68d",
    "roots": {
       "bookmark_bar": {
          "children": [ {
@@ -592,9 +592,16 @@
                "name": "GitHub - sindresorhus/awesome: 😎 Awesome lists about all kinds of interesting topics",
                "type": "url",
                "url": "https://github.com/sindresorhus/awesome#programming-languages"
+            }, {
+               "date_added": "13255563850633115",
+               "guid": "808201c3-4105-4435-b448-e5ba1ccf81e2",
+               "id": "206",
+               "name": "Linux | Dev47Apps",
+               "type": "url",
+               "url": "https://www.dev47apps.com/droidcam/linux/"
             } ],
             "date_added": "13253321237620778",
-            "date_modified": "13255144286835954",
+            "date_modified": "13255563850633115",
             "guid": "3cb3eb77-1bbe-4a98-8b3a-13a297b851ff",
             "id": "69",
             "name": "Informatica",
