@@ -1,16 +1,3 @@
-" Configuracion de Kite
-"map <leader>gd :KiteGotoDefinition<CR>
-"map <leader>kk :KiteDocsAtCursor<CR>
-"inoremap <c-p> <C-x><C-u>
-
-"set completeopt+=menuone
-"set completeopt+=noselect
-"set completeopt+=preview
-"autocmd CompleteDone * if !pumvisible() | pclose | endif
-"set belloff+=ctrlg  " if vim beeps during completion
-
-"nnoremap <leader>r :FloatermNew --height=0.8 --width=0.8 --wintype=float --name=floaterm_python --autoclose=0 --position=center python % <CR><CR>
-
 function! s:check_back_space() abort
   let col = col('.') - 1
   return !col || getline('.')[col - 1]  =~# '\s'
@@ -31,3 +18,5 @@ nnoremap <buffer> <leader>cr :CoCRestart
 
 " Highlight the symbol and its references when holding the cursor.
 autocmd CursorHold * silent call CocActionAsync('highlight')
+
+nnoremap <leader>r :FloatermNew --height=0.8 --width=0.8 --wintype=float --name=floaterm_python --autoclose=0 --position=center python % <CR><CR>
