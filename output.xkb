@@ -1372,7 +1372,7 @@ xkb_symbols "pc_latam_inet(evdev)" {
     };
     key <AD11> {
         type[group1]= "FOUR_LEVEL",
-        symbols[Group1]= [      braceright,    bracketright,  dead_diaeresis,  dead_abovering ],
+        symbols[Group1]= [      braceright,    bracketright,  dead_diaeresis,  asterisk ],
         symbols[Group2]= [      dead_acute,  dead_diaeresis ],
         symbols[Group3]= [  dead_diaeresis,  dead_abovering ],
         symbols[Group4]= [      dead_acute,  dead_diaeresis ]
@@ -1382,7 +1382,7 @@ xkb_symbols "pc_latam_inet(evdev)" {
         type[group2]= "ONE_LEVEL",
         type[group3]= "ONE_LEVEL",
         type[group4]= "ONE_LEVEL",
-        symbols[Group1]= [            plus,        asterisk,      asciitilde,     dead_macron ],
+        symbols[Group1]= [            plus,        asterisk,      asciitilde,     plus ],
         symbols[Group2]= [            plus ],
         symbols[Group3]= [      asciitilde ],
         symbols[Group4]= [     dead_macron ]
@@ -1494,7 +1494,7 @@ xkb_symbols "pc_latam_inet(evdev)" {
         type[group2]= "ONE_LEVEL",
         type[group3]= "ONE_LEVEL",
         type[group4]= "ONE_LEVEL",
-        symbols[Group1]= [       braceleft,     bracketleft, dead_circumflex,       braceleft ],
+        symbols[Group1]= [       braceleft,     bracketleft, dead_circumflex,      slash],
         symbols[Group2]= [       braceleft ],
         symbols[Group3]= [ dead_circumflex ],
         symbols[Group4]= [       braceleft ]
@@ -1592,7 +1592,7 @@ xkb_symbols "pc_latam_inet(evdev)" {
         type[group2]= "ONE_LEVEL",
         type[group3]= "ONE_LEVEL",
         type[group4]= "ONE_LEVEL",
-        symbols[Group1]= [           comma,       semicolon,  horizconnector,        multiply ],
+        symbols[Group1]= [           comma,       semicolon,  horizconnector,        comma ],
         symbols[Group2]= [           comma ],
         symbols[Group3]= [  horizconnector ],
         symbols[Group4]= [        multiply ]
@@ -1602,7 +1602,7 @@ xkb_symbols "pc_latam_inet(evdev)" {
         type[group2]= "ONE_LEVEL",
         type[group3]= "ONE_LEVEL",
         type[group4]= "ONE_LEVEL",
-        symbols[Group1]= [          period,           colon,  periodcentered,        division ],
+        symbols[Group1]= [          period,           colon,  periodcentered,        period ],
         symbols[Group2]= [          period ],
         symbols[Group3]= [  periodcentered ],
         symbols[Group4]= [        division ]
@@ -1612,7 +1612,7 @@ xkb_symbols "pc_latam_inet(evdev)" {
         type[group2]= "ONE_LEVEL",
         type[group3]= "ONE_LEVEL",
         type[group4]= "ONE_LEVEL",
-        symbols[Group1]= [           minus,      underscore,   dead_belowdot,   dead_abovedot ],
+        symbols[Group1]= [           minus,      underscore,   dead_belowdot,   minus ],
         symbols[Group2]= [           minus ],
         symbols[Group3]= [   dead_belowdot ],
         symbols[Group4]= [   dead_abovedot ]
