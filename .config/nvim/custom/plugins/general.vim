@@ -1,12 +1,11 @@
 " Vim Rainbow
 let g:rainbow_active = 1
 
-" Kite Global Config
-let g:kite_supported_languages = ['javascript', 'python']
-let g:kite_tab_complete=1
-
 " NERDTree
 let g:NERDTreeChDirMode = 1 " Cambia el directorio actual al nodo padre actual
+
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+" To close vim when NERDTree is the only buffer
 
 " NERDCommenter
 let g:NERDCreateDefaultMappings = 0
@@ -21,6 +20,14 @@ let g:user_emmet_install_global = 0
 
 let g:EasyMotion_smartcase = 1
 " v finds v and V, but V finds V only
+
+let g:buffergator_viewport_split_policy="R"
+let g:buffergator_autoupdate=1
+let g:buffergator_split_size=50
+let g:buffergator_sort_regime="basename"
+let g:buffergator_show_full_directory_path=0
+let g:buffergator_suppress_keymaps = 1
+" Not use default plugin keymap
 
 " Python Syntaxis
 let g:python_highlight_all = 1
@@ -43,9 +50,10 @@ let g:lightline = {
       \ 'colorscheme': 'tender',
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ],
-      \             [ 'gitbranch', 'readonly', 'filename', 'charvalue' ] ],
-      \   'right': [ [ 'kitestatus', 'coc-status', 'fileencoding', 'filetype', 'percent', 'lineinfo' ] ]
+      \             [ 'readonly', 'filename', 'charvalue' ] ],
+      \   'right': [ ['gitbranch', 'fileencoding', 'filetype', 'percent', 'lineinfo' ] ]
       \ },
-      \ 'component': {}
+      \ 'component_function': {
+      \   'gitbranch': 'FugitiveHead'
+      \ },
       \ }
-

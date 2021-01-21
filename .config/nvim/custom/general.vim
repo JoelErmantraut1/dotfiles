@@ -30,6 +30,7 @@ set guicursor= " Cursor is always a block
 set nohlsearch
 set scrolloff=10 " Centers the cursor when near EOF
 set signcolumn=yes " Use for linters and git apps
+set noshowmode " To avoid showing --INSERT-- and so
 
 set cmdheight=2 " More space for messages
 

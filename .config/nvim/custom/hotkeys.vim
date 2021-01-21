@@ -3,7 +3,6 @@ nnoremap <leader>s :w<CR>
 nnoremap <leader>q :q<CR>
 nnoremap <leader>qq :q!<CR>
 nnoremap <leader>fs :Files<CR>
-nnoremap <leader>u :UndotreeShow<CR>
 
 " Resize windows
 nnoremap <silent> <Left> :vertical resize +2<CR> 
@@ -15,9 +14,6 @@ nnoremap <silent> <Right> :vertical resize -2<CR>
 nnoremap <leader>d :bnext<CR>
 nnoremap <leader>a :bprevious<CR>
 nnoremap <leader>w :bdelete<CR>
-" Splits
-nnoremap <leader>vs :vsp<space>
-nnoremap <leader>sp :sp<space>
 " Windows
 nnoremap <leader>h :wincmd h<CR>
 nnoremap <leader>j :wincmd j<CR>
@@ -42,7 +38,7 @@ nnoremap <leader><F5> :source $HOME/.config/nvim/init.vim<CR>
 " Source Neovim config, useful when working with separated config
 " files
 
-nnoremap <leader>m :FloatermNew --height=0.8 --width=0.8 --wintype=float --autoclose=1 --position=center<CR>
+nnoremap <leader>t :FloatermNew --height=0.8 --width=0.8 --wintype=float --autoclose=1 --position=center<CR>
 " Opens a new instance of Floaterm
 
 " Plugins
@@ -51,9 +47,7 @@ map <leader>n :NERDTreeToggle<CR>
 nnoremap <leader>c :call NERDComment(0, "toggle")<CR>
 vnoremap <leader>c :call NERDComment(0, "toggle")<CR>
 
-nmap <leader>t :TagbarToggle<CR>
-
-nmap <leader>mm :MinimapToggle<CR>
+nmap <leader>tg :TagbarToggle<CR>
 
 map  / <Plug>(easymotion-sn)
 omap / <Plug>(easymotion-tn)
@@ -65,7 +59,10 @@ vmap <leader>f <Plug>(coc-format-selected)
 nmap <leader>f <Plug>(coc-format-selected)
 " Format code
 
-nnoremap <leader>r :ColorHighlight<CR>
+nnoremap <leader>ch :ColorHighlight<CR>
 " Show colors with colors
 
 nnoremap <leader>u :UndotreeToggle<CR>
+
+nnoremap <leader>b :BuffergatorToggle<CR>
+" BufferGator
