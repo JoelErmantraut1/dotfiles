@@ -1,8 +1,12 @@
 [Added Associations]
 application/pdf=foxitreader.desktop;
-application/x-bittorrent=xdman.desktop;
+application/wps-office.docx=wps-office-wps.desktop;file-roller.desktop;xarchiver.desktop;
+application/wps-office.pptx=wps-office-wpp.desktop;file-roller.desktop;xarchiver.desktop;
+application/wps-office.xlsx=wps-office-et.desktop;file-roller.desktop;xarchiver.desktop;
+application/x-bittorrent=transmission-qt.desktop;xdman.desktop;
 application/x-shellscript=Alacritty.desktop;
 application/x-xz-compressed-tar=userapp-tar -vxf-4RP3V0.desktop;
+application/zip=file-roller.desktop;xarchiver.desktop;
 image/jpeg=org.nomacs.ImageLounge.desktop;
 image/png=feh.desktop;org.nomacs.ImageLounge.desktop;
 inode/directory=org.kde.krusader.desktop;pcmanfm.desktop;ranger.desktop;
@@ -12,8 +16,13 @@ text/x-python=org.gnome.gedit.desktop;sublime_text.desktop;
 [Default Applications]
 application/pdf=FoxitReader.desktop
 application/ppdf=FoxitReader.desktop
+application/wps-office.docx=wps-office-wps.desktop;
+application/wps-office.pptx=wps-office-wpp.desktop;
+application/wps-office.xlsx=wps-office-et.desktop;
+application/x-bittorrent=transmission-qt.desktop;
 application/x-shellscript=Alacritty.desktop
 application/x-xz-compressed-tar=userapp-tar -vxf-4RP3V0.desktop
+application/zip=file-roller.desktop;
 image/jpeg=org.nomacs.ImageLounge.desktop
 image/png=org.nomacs.ImageLounge.desktop
 inode/directory=org.kde.krusader.desktop;
@@ -22,4 +31,5 @@ text/x-python=sublime_text.desktop
 x-scheme-handler/kite=kite-copilot.desktop
 
 [Removed Associations]
+application/zip=file-roller.desktop;
 inode/directory=VSCodium.desktop;
