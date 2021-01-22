@@ -95,6 +95,7 @@ plugins+=(web-search)
 plugins+=(wd)
 # Genera bookmarks de las carpetas
 plugins+=(pass)
+plugnis+=(zsh-interactive-cd)
 
 source $ZSH/oh-my-zsh.sh
 
