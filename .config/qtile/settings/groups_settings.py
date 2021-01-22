@@ -63,7 +63,7 @@ group_names = [
        'layouts': layouts.values(),
        # Include all layouts
        'matches': [Match(
-            wm_class=['prepros']
+            wm_class=['prepros', 'wps']
         )],
        'label': group_list_names["VAR"]
     }),
@@ -75,7 +75,8 @@ group_names = [
            layouts['monadwide']
         ],
        'matches': [Match(
-          wm_class=['whatsdesk', 'Telegram','franz']
+          wm_class=['whatsdesk', 'Telegram','franz',
+                    'discord', 'zoom', 'droidcam']
         )],
        'label': group_list_names["CHAT"]
     }),
@@ -113,7 +114,7 @@ group_names = [
            layouts['monadtall']
         ],
        'matches': [Match(wm_class=[
-           'lxappearance', 'pavucontrol', 
+           'lxappearance', 'pavucontrol',
            'gpartedbin', 'grub-customizer'
         ])],
        'label': group_list_names["CONF"]
