@@ -1,8 +1,12 @@
 # -*- coding: utf-8 -*-
 
-from settings.common import *
+from settings.common import (
+        common_font, colors, group_list_names,
+        icons_font, widget_colors, volume_step,
+        terminal
+)
 from settings.functions import (
-    get_screen_resolution, spacers, separator, 
+    get_screen_resolution, spacers, separator,
     widget_separator, widget_icons, change_wallpaper,
     run_or_go, run_or_bring
 )

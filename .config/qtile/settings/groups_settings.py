@@ -54,7 +54,7 @@ group_names = [
        'matches': [Match(
             wm_class=['sublime_text', 'Atollic TrueSTUDIO for STM32',
                       'jetbrains-pycharm-ce', 'kite', 'gedit',
-                      'jetbrains-studio']
+                      'jetbrains-studio', 'vscodium', 'arduino']
         )],
        'label': group_list_names["DEV"]
     }),
