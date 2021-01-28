@@ -40,11 +40,14 @@ if !exists('g:undotree_SplitWidth')
     let g:undotree_SplitWidth = 30
 endif
 
-" IndentGuides
-" let g:indent_guides_enable_on_vim_startup = 1
-let g:indent_guides_guide_size = 1
-let g:indent_guides_exclude_filetypes = ['help', 'nerdtree']
-let g:indent_guides_default_mapping = 0
+" IndentLine
+"let g:indentLine_char = ''
+"let g:indentLine_first_char = ''
+"let g:indentLine_showFirstIndentLevel = 1
+"let g:indentLine_setColors = 0
+
+"autocmd BufCreate NERD_tree_* :IndentLinesToggle
+" To avoid indent lines in NERDtree
 
 let g:lightline = {
       \ 'colorscheme': 'tender',
@@ -54,6 +57,6 @@ let g:lightline = {
       \   'right': [ ['gitbranch', 'fileencoding', 'filetype', 'percent', 'lineinfo' ] ]
       \ },
       \ 'component_function': {
-      \   'gitbranch': 'FugitiveHead'
+      \   'gitbranch': 'gitbranch#name'
       \ },
       \ }

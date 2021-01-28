@@ -31,10 +31,12 @@ set nohlsearch
 set scrolloff=10 " Centers the cursor when near EOF
 set signcolumn=yes " Use for linters and git apps
 set noshowmode " To avoid showing --INSERT-- and so
+set encoding=UTF-8
 
 set cmdheight=2 " More space for messages
 
 set shortmess+=c " Don't pass messages to completion menu
+set shortmess+=F
 
 filetype plugin on
 filetype plugin indent on
