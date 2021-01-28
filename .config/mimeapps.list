@@ -4,6 +4,8 @@ application/wps-office.docx=wps-office-wps.desktop;file-roller.desktop;xarchiver
 application/wps-office.pptx=wps-office-wpp.desktop;file-roller.desktop;xarchiver.desktop;
 application/wps-office.xlsx=wps-office-et.desktop;file-roller.desktop;xarchiver.desktop;
 application/x-bittorrent=transmission-qt.desktop;xdman.desktop;
+application/x-bzip-compressed-tar=file-roller-2.desktop;xarchiver.desktop;
+application/x-ole-storage=wps-office-et.desktop;
 application/x-shellscript=Alacritty.desktop;
 application/x-xz-compressed-tar=userapp-tar -vxf-4RP3V0.desktop;
 application/zip=file-roller.desktop;xarchiver.desktop;
@@ -20,6 +22,8 @@ application/wps-office.docx=wps-office-wps.desktop;
 application/wps-office.pptx=wps-office-wpp.desktop;
 application/wps-office.xlsx=wps-office-et.desktop;
 application/x-bittorrent=transmission-qt.desktop;
+application/x-bzip-compressed-tar=file-roller-2.desktop;
+application/x-ole-storage=wps-office-et.desktop;
 application/x-shellscript=Alacritty.desktop
 application/x-xz-compressed-tar=userapp-tar -vxf-4RP3V0.desktop
 application/zip=file-roller.desktop;
@@ -31,5 +35,6 @@ text/x-python=sublime_text.desktop
 x-scheme-handler/kite=kite-copilot.desktop
 
 [Removed Associations]
+application/x-bzip-compressed-tar=file-roller-2.desktop;
 application/zip=file-roller.desktop;
 inode/directory=VSCodium.desktop;

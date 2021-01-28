@@ -1,5 +1,5 @@
 {
-   "checksum": "a2ab8f3eb6d4438e949f04926a15d68d",
+   "checksum": "bb88bb5101cdc98532f0eacf48df6354",
    "roots": {
       "bookmark_bar": {
          "children": [ {
@@ -52,128 +52,6 @@
                "guid": "a62aedf3-fd8a-4084-864f-1b1a3fb4167a",
                "id": "6",
                "name": "Matematica",
-               "type": "folder"
-            }, {
-               "children": [ {
-                  "date_added": "13234295725000000",
-                  "guid": "1b516e37-87cb-47c4-89ab-56655f18cd2a",
-                  "id": "14",
-                  "name": "OSBeehives | Source Files",
-                  "type": "url",
-                  "url": "https://www.osbeehives.com/collections/source-files"
-               }, {
-                  "date_added": "13242315112000000",
-                  "guid": "d6fb1065-3c97-4b80-808f-733ef40d5bb2",
-                  "id": "15",
-                  "name": "All STM32F4 libraries - STM32F4 Discovery",
-                  "type": "url",
-                  "url": "http://stm32f4-discovery.net/2014/05/all-stm32f429-libraries-at-one-place/"
-               }, {
-                  "date_added": "13242315111000000",
-                  "guid": "99714c65-4883-413a-a7f6-0a7b0e61e29a",
-                  "id": "16",
-                  "name": "MaJerle/stm32f429: Keil projects and libraries for STM32F4xx devices",
-                  "type": "url",
-                  "url": "https://github.com/MaJerle/stm32f429"
-               } ],
-               "date_added": "13253321237618445",
-               "date_modified": "0",
-               "guid": "cb9332f3-3aca-459b-a63d-a6fc1d35a890",
-               "id": "13",
-               "name": "Digitales",
-               "type": "folder"
-            }, {
-               "children": [ {
-                  "children": [ {
-                     "date_added": "13248804469000000",
-                     "guid": "c75f3264-e215-4171-a4cc-30f0e32f9eeb",
-                     "id": "19",
-                     "name": "New Release of Wi-Fi Certified Vantage™ Continues to Improve the Wi-Fi User Experience",
-                     "type": "url",
-                     "url": "https://www.cablelabs.com/new-release-of-wi-fi-certified-vantage-continues-to-improve-the-wi-fi-user-experience"
-                  }, {
-                     "date_added": "13248231544000000",
-                     "guid": "cfb555cb-72f3-4c61-87e7-3f1d6174b373",
-                     "id": "20",
-                     "name": "What is DOCSIS? Data Over Cable Service Interface Specifications",
-                     "type": "url",
-                     "url": "https://www.avsystem.com/blog/DOCSIS/"
-                  } ],
-                  "date_added": "13253321237618567",
-                  "date_modified": "0",
-                  "guid": "99858e0d-eb73-4f7d-b5ed-6aa96cae85fd",
-                  "id": "18",
-                  "name": "Usados",
-                  "type": "folder"
-               }, {
-                  "date_added": "13242491268000000",
-                  "guid": "58f72d75-b2f5-45bc-bc53-b41e234de3e3",
-                  "id": "21",
-                  "name": "D-Link España | DOCSIS® 3.0",
-                  "type": "url",
-                  "url": "https://web.archive.org/web/20140218042920/http://www.dlink.com/es/es/service-provider-solutions/technology/docsis-30"
-               }, {
-                  "date_added": "13242491216000000",
-                  "guid": "52ede484-9edd-4382-899c-a962240c84fb",
-                  "id": "22",
-                  "name": "DOCSIS® » Primer",
-                  "type": "url",
-                  "url": "https://web.archive.org/web/20101120154225/http://cablelabs.com/cablemodem/specifications/"
-               }, {
-                  "date_added": "13242491196000000",
-                  "guid": "8506a922-7751-4249-8fda-6ed4fef94eec",
-                  "id": "23",
-                  "name": "CableLabs Issues DOCSIS 3.0 Specifications Enabling 160 Mbps",
-                  "type": "url",
-                  "url": "https://web.archive.org/web/20101120234649/http://cablelabs.com/news/pr/2006/06_pr_docsis30_080706.html"
-               }, {
-                  "date_added": "13242490655000000",
-                  "guid": "8f06ad42-6a06-42d2-ab32-c0bdd9afef34",
-                  "id": "24",
-                  "name": "DOCSIS - DOCSIS - qwe.wiki",
-                  "type": "url",
-                  "url": "https://es.qwe.wiki/wiki/DOCSIS"
-               }, {
-                  "date_added": "13242490323000000",
-                  "guid": "407b24bc-9a80-463b-8f65-6ea47ac1af65",
-                  "id": "25",
-                  "name": "Introducción al caudal de datos en un mundo DOCSIS - Cisco",
-                  "type": "url",
-                  "url": "https://www.cisco.com/c/es_mx/support/docs/broadband-cable/data-over-cable-service-interface-specifications-docsis/19220-data-thruput-docsis-world-19220.html"
-               }, {
-                  "date_added": "13242490285000000",
-                  "guid": "1847d45b-6b0b-4235-b294-98cf23e4d550",
-                  "id": "26",
-                  "name": "Huawei prueba en España la tecnología DOCSIS 3.1",
-                  "type": "url",
-                  "url": "https://www.ticbeat.com/tecnologias/huawei-prueba-espana-tecnologia-docsis-3-1/"
-               }, {
-                  "date_added": "13242490115000000",
-                  "guid": "99fe49d4-65fa-4aaa-90f4-cf0125738c6d",
-                  "id": "27",
-                  "name": "EAP-CREDS: Enabling Policy-Oriented Credential Management in Access Networks",
-                  "type": "url",
-                  "url": "https://www.cablelabs.com/eap-creds-enabling-policy-oriented-credential-management-in-access-networks"
-               }, {
-                  "date_added": "13242490010000000",
-                  "guid": "a72c2b88-2f5c-4f7d-a73f-c7686646ff06",
-                  "id": "28",
-                  "name": "Esta es la nueva tecnología que aporta el estándar DOCSIS 3.1 | PROMAX Electronica",
-                  "type": "url",
-                  "url": "https://www.promax.es/esp/noticias/569/esta-es-la-tecnologia-que-aporta-el-estandar-docsis-31/"
-               }, {
-                  "date_added": "13248836097000000",
-                  "guid": "0e073c8f-302c-4538-a10b-fcdbcae9284c",
-                  "id": "29",
-                  "name": "Understanding Data Throughput in a DOCSIS World - Cisco",
-                  "type": "url",
-                  "url": "https://www.cisco.com/c/en/us/support/docs/broadband-cable/data-over-cable-service-interface-specifications-docsis/19220-data-thruput-docsis-world-19220.html"
-               } ],
-               "date_added": "13253321237618560",
-               "date_modified": "0",
-               "guid": "a23c352f-f530-42da-9bcb-1044997c081c",
-               "id": "17",
-               "name": "SICOM Expo",
                "type": "folder"
             }, {
                "children": [ {
@@ -465,7 +343,7 @@
                "url": "https://electronics.stackexchange.com/questions/154553/lower-voltage-methods-other-than-voltage-dividing"
             } ],
             "date_added": "13253321237620266",
-            "date_modified": "0",
+            "date_modified": "13256192193183978",
             "guid": "bf357bdb-dd11-4585-820e-2c7afdb549d0",
             "id": "58",
             "name": "Electronica",
@@ -599,9 +477,23 @@
                "name": "Linux | Dev47Apps",
                "type": "url",
                "url": "https://www.dev47apps.com/droidcam/linux/"
+            }, {
+               "date_added": "13256192193183978",
+               "guid": "f70b5467-68e1-49a9-abb4-f24f76372f4b",
+               "id": "211",
+               "name": "mhinz/vim-galore: All things Vim!",
+               "type": "url",
+               "url": "https://github.com/mhinz/vim-galore"
+            }, {
+               "date_added": "13256236522909305",
+               "guid": "08f75a97-cd55-4aa2-9c57-35ea9f1da112",
+               "id": "213",
+               "name": "Go con Ejemplos",
+               "type": "url",
+               "url": "http://goconejemplos.com/"
             } ],
             "date_added": "13253321237620778",
-            "date_modified": "13255563850633115",
+            "date_modified": "13256236522909305",
             "guid": "3cb3eb77-1bbe-4a98-8b3a-13a297b851ff",
             "id": "69",
             "name": "Informatica",
@@ -1107,13 +999,6 @@
                   "name": "gitignore.io - Create Useful .gitignore Files For Your Project",
                   "type": "url",
                   "url": "https://www.toptal.com/developers/gitignore"
-               }, {
-                  "date_added": "13248239385000000",
-                  "guid": "e2c65c8e-168e-47e4-be91-29889a7074b6",
-                  "id": "156",
-                  "name": "Regex Password Validation Solutions | Codewars",
-                  "type": "url",
-                  "url": "https://www.codewars.com/kata/52e1476c8147a7547a000811/solutions"
                } ],
                "date_added": "13253321237623264",
                "date_modified": "0",
@@ -1404,13 +1289,6 @@
             "name": "MEGA",
             "type": "url",
             "url": "https://mega.nz/folder/1MVCTS6Z#4_ZGKyIYM5P2RmUhWQN2pA/folder/YRtnhIZS"
-         }, {
-            "date_added": "13251009614000000",
-            "guid": "af26bf60-c359-4112-993a-e609a86136ca",
-            "id": "196",
-            "name": "Tvbox se queda en el logo, tvbox no inicia, tvbox no arranca, SOLUCIONADO - YouTube",
-            "type": "url",
-            "url": "https://www.youtube.com/watch?v=oBdEQ7wYWE8"
          } ],
          "date_added": "13253321145079656",
          "date_modified": "0",
