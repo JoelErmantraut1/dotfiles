@@ -85,7 +85,6 @@ ZSH_ECHO_THEME=false
 # Add wisely, as too many plugins slow down shell startup.
 
 plugins=(git)
-plugins+=(k)
 plugins+=(zsh-syntax-highlighting)
 plugins+=(zsh-autosuggestions)
 plugins+=(virtualenv)
@@ -95,7 +94,7 @@ plugins+=(web-search)
 plugins+=(wd)
 # Genera bookmarks de las carpetas
 plugins+=(pass)
-plugnis+=(zsh-interactive-cd)
+plugins+=(zsh-interactive-cd)
 
 source $ZSH/oh-my-zsh.sh
 
