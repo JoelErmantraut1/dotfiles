@@ -20,6 +20,8 @@ Plug 'jeetsukumaran/vim-buffergator' " To manage buffers
 Plug 'frazrepo/vim-rainbow' " Shows rainbow brackets and others 
 Plug 'preservim/nerdcommenter' " Comments Code
 Plug 'chrisbra/colorizer' " Shows colors with colors 
+Plug 'lfilho/cosco.vim' " To autocomplete comma and semicolon
+Plug 'tpope/vim-repeat' " To make repeat more clever
 
 " Syntax Highlighting
 Plug 'digitaltoad/vim-pug'

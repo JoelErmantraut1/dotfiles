@@ -40,6 +40,9 @@ if !exists('g:undotree_SplitWidth')
     let g:undotree_SplitWidth = 30
 endif
 
+let g:cosco_ignore_comment_lines = 1     " Default : 0
+" Cosco
+
 " IndentLine
 "let g:indentLine_char = ''
 "let g:indentLine_first_char = ''

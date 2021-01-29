@@ -63,6 +63,10 @@ nnoremap <leader>ch :ColorHighlight<CR>
 " Show colors with colors
 
 nnoremap <leader>u :UndotreeToggle<CR>
+" UndoTree
 
 nnoremap <leader>b :BuffergatorToggle<CR>
 " BufferGator
+
+nnoremap <leader>, :CommaOrSemiColon<CR>
+" Cosco
