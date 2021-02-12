@@ -2,8 +2,8 @@
   <setting name="new-image-width" type="System.Int32">1366</setting>
   <setting name="new-image-height" type="System.Int32">768</setting>
   <setting name="default-image-type" type="System.String">png</setting>
-  <setting name="window-size-width" type="System.Int32">1360</setting>
-  <setting name="window-size-height" type="System.Int32">722</setting>
+  <setting name="window-size-width" type="System.Int32">1356</setting>
+  <setting name="window-size-height" type="System.Int32">718</setting>
   <setting name="ruler-metric" type="System.Int32">0</setting>
   <setting name="window-maximized" type="System.Boolean">False</setting>
   <setting name="ruler-shown" type="System.Boolean">False</setting>

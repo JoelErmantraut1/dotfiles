@@ -11,4 +11,3 @@ xmodmap ~/.Xmodmap &
 xkbcomp output.xkb $DISPLAY &
 python3 $HOME/.config/scripts/snippets.py &
 python3 $HOME/.config/scripts/volume_control.py &
-python3 $HOME/.config/scripts/fast_scrolling.py &

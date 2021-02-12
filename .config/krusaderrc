@@ -9,7 +9,7 @@ HDMI-A-0 Width 1366=1366
 HDMI-A-0 XPosition=0
 HDMI-A-0 YPosition=20
 RestorePositionForNextInstance=false
-State=AAAA/wAAAAD9AAAAAAAABVYAAAKdAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAMAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAAAAAAFABqAG8AYgBUAG8AbwBsAEIAYQByAAAAAAD/////AAAAAAAAAAAAAAAcAGEAYwB0AGkAbwBuAHMAVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAA
+State=AAAA/wAAAAD9AAAAAAAABVYAAAKdAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAMAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAAAAAAFABqAG8AYgBUAG8AbwBsAEIAYQByAAAAAAD/////AAAAAAAAAAAAAAAcAGEAYwB0AGkAbwBuAHMAVABvAG8AbABCAGEAcgAAAAKK/////wAAAAAAAAAA
 StatusBar=Disabled
 ToolBarsMovable=Disabled
 Version=2.7.2
@@ -66,7 +66,7 @@ Window Width=770
 
 [General]
 Editor=nvim
-Terminal=alacritty %d
+Terminal=alacritty --working-directory %d
 
 [JobManager]
 Queue Mode=false
@@ -74,8 +74,8 @@ Queue Mode=false
 [KPropertiesDialog]
 HDMI-1 Height 768=509
 HDMI-1 Width 1366=638
-HDMI-A-0 Height 768=432
-HDMI-A-0 Width 1366=387
+HDMI-A-0 Height 768=439
+HDMI-A-0 Width 1366=391
 
 [Konfigurator]
 Window Height=556
@@ -99,7 +99,7 @@ History Button Visible=false
 Media Button Visible=false
 Navigator Full Path=true
 Panel Toolbar visible=false
-Show Hidden=false
+Show Hidden=true
 Show Tab Buttons=false
 Single Instance Mode=true
 Sort method=1
@@ -118,8 +118,9 @@ Layout=krusader:compact
 
 [Private]
 Command Execution Mode=0
-PopularUrls=file:///home/joel/stm/,file:///home/joel/Apps/,file:///home/joel/Arduino/,file:///home/joel/Downloads/,file:///home/joel/Documentos/Centro/,file:///home/joel/,file:///home/joel/Documentos/,file:///home/,file:///home/datos/,file:///home/datos/Documentos/,file:///home/datos/Documentos/Drive/,file:///home/datos/Documentos/Drive/Informatica I/,file:///home/datos/Documentos/Drive/Informatica I/Parciales/,file:///home/datos/Documentos/Descartables - Temporales/,file:///home/datos/Documentos/Drive/Informatica I/Parciales/2020/,file:///home/datos/Documentos/Drive/Informatica I/Parciales/2020/Final/,file:///home/datos/Documentos/Drive/Informatica I/Parciales/2020/Final/Final1/,file:///home/datos/Documentos/MEGA/Electronica/Arduino/Ejemplos Arduino/LCD_SideScroll/,file:///home/datos/Documentos/Drive/UTN/3. Tercer Año/Teoria de Circuito I/Unidad Tematica N° 6/,file:///home/datos/Documentos/Drive/UTN/,file:///home/datos/Documentos/Drive/UTN/3. Tercer Año/Teoria de Circuito I/,file:///home/datos/Documentos/Drive/UTN/3. Tercer Año/,file:///home/datos/Documentos/Drive/UTN/3. Tercer Año/Teoria de Circuito I/Unidad Tematica N° 10/,file:///home/datos/Documentos/Drive/UTN/3. Tercer Año/Teoria de Circuito I/Unidad Tematica N° 9/,file:///home/datos/Documentos/Drive/UTN/3. Tercer Año/Teoria de Circuito I/Unidad Tematica N° 8/,file:///home/datos/Documentos/Drive/UTN/3. Tercer Año/Teoria de Circuito I/Unidad Tematica N° 7/,file:///home/datos/Documentos/Drive/UTN/3. Tercer Año/Teoria de Circuito I/Unidad Tematica N° 4/,file:///home/datos/Documentos/Drive/Informatica I/Parciales/2020/Final/Final2/,file:///home/datos/Documentos/Drive/UTN/1. Primer Año/Informatica I/150 - Algoritmos de Ordenacion/Laboratorio 15/,file:///home/datos/Documentos/Drive/UTN/1. Primer Año/Informatica I/150 - Algoritmos de Ordenacion/Laboratorio 15/Ejercicio1/,file:///home/datos/Documentos/Drive/UTN/1. Primer Año/Informatica I/150 - Algoritmos de Ordenacion/Laboratorio 15/Ejercicio3/
-PopularUrlsRank=19,17,15,13,10,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+PopularUrls=file:///home/joel/stm/,file:///home/joel/Apps/,file:///home/joel/Arduino/,file:///home/joel/Downloads/,file:///home/joel/Documentos/Centro/,file:///home/joel/,file:///home/datos/Documentos/MEGA/Electronica/Arduino/Ejemplos Arduino/LCD_SideScroll/,file:///home/datos/Documentos/Drive/UTN/3. Tercer Año/Teoria de Circuito I/Unidad Tematica N° 6/,file:///home/joel/Documentos/,file:///home/,file:///home/datos/,file:///home/datos/Documentos/,file:///home/datos/Documentos/Drive/,file:///home/datos/Documentos/Drive/Informatica I/,file:///home/datos/Documentos/Drive/Informatica I/Parciales/,file:///home/datos/Documentos/Descartables - Temporales/,file:///home/datos/Documentos/Drive/Informatica I/Parciales/2020/,file:///home/datos/Documentos/Drive/Informatica I/Parciales/2020/Final/,file:///home/datos/Documentos/Drive/Informatica I/Parciales/2020/Final/Final1/,file:///home/datos/Documentos/Drive/UTN/,file:///home/datos/Documentos/Drive/UTN/3. Tercer Año/Teoria de Circuito I/,file:///home/datos/Documentos/Drive/UTN/3. Tercer Año/,file:///home/datos/Documentos/Drive/UTN/3. Tercer Año/Teoria de Circuito I/Unidad Tematica N° 10/,file:///home/datos/Documentos/Drive/UTN/3. Tercer Año/Teoria de Circuito I/Unidad Tematica N° 9/,file:///home/datos/Documentos/Drive/UTN/3. Tercer Año/Teoria de Circuito I/Unidad Tematica N° 8/,file:///home/datos/Documentos/Drive/UTN/3. Tercer Año/Teoria de Circuito I/Unidad Tematica N° 7/,file:///home/datos/Documentos/Drive/UTN/3. Tercer Año/Teoria de Circuito I/Unidad Tematica N° 4/,file:///home/datos/Documentos/Drive/Informatica I/Parciales/2020/Final/Final2/,file:///home/datos/Documentos/Drive/UTN/1. Primer Año/Informatica I/150 - Algoritmos de Ordenacion/Laboratorio 15/,file:///home/datos/Documentos/Drive/UTN/1. Primer Año/Informatica I/150 - Algoritmos de Ordenacion/Laboratorio 15/Ejercicio1/
+PopularUrlsRank=16,14,12,10,7,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Predefined Selections=backup
 Start Position=0,20
 Start Size=1366,728
 cmdline history=

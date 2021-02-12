@@ -8,5 +8,5 @@ __pycache__
 */nvim/plugged
 */nvim/undodir
 
-.git
+*/.git
 

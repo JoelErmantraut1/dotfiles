@@ -13,8 +13,10 @@ export PATH=$PATH:/home/datos/android_sdk/tools/bin
 export PATH=$PATH:/home/datos/android_sdk/platform-tools
 
 export PATH=$PATH:/home/joel/.local/bin
-export PATH=$PATH:/home/joel/pycharm-community-2020.3.1/bin/
 export PATH=$PATH:/home/joel/android-studio/bin
+
+export PATH=$PATH:/usr/lib/ruby/gems/2.7.0
+export PATH=$PATH:/home/joel/.local/share/gem/ruby/2.7.0
 # Path to your oh-my-zsh installation.
 export ZSH="/home/joel/.oh-my-zsh"
 

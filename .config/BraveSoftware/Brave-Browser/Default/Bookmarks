@@ -1,5 +1,5 @@
 {
-   "checksum": "bb88bb5101cdc98532f0eacf48df6354",
+   "checksum": "3150b011a3251fb74b283c6e311a710e",
    "roots": {
       "bookmark_bar": {
          "children": [ {
@@ -422,6 +422,21 @@
                "name": "Windows",
                "type": "folder"
             }, {
+               "children": [ {
+                  "date_added": "13256714173979056",
+                  "guid": "8604e6e4-315d-4a6b-96c3-4d1544f2cd33",
+                  "id": "225",
+                  "name": "Lacerda53/duckduino: Rubber Ducky with arduino uno",
+                  "type": "url",
+                  "url": "https://github.com/Lacerda53/duckduino"
+               } ],
+               "date_added": "13256714052418754",
+               "date_modified": "13256714176442987",
+               "guid": "68912f1b-e6e8-4066-afb4-b82c4f6eeb1f",
+               "id": "224",
+               "name": "PendriveDucky",
+               "type": "folder"
+            }, {
                "date_added": "13239011082000000",
                "guid": "336ed74f-4c6c-4ef1-87d6-b8c555efccd4",
                "id": "80",
@@ -493,7 +508,7 @@
                "url": "http://goconejemplos.com/"
             } ],
             "date_added": "13253321237620778",
-            "date_modified": "13256280687773526",
+            "date_modified": "13256877879082313",
             "guid": "3cb3eb77-1bbe-4a98-8b3a-13a297b851ff",
             "id": "69",
             "name": "Informatica",
@@ -1021,9 +1036,65 @@
                   "name": "Resoomer | Resumidor para hacer un resumen automático de texto en línea",
                   "type": "url",
                   "url": "https://resoomer.com/es/"
+               }, {
+                  "date_added": "13256591714864175",
+                  "guid": "de065ac8-567e-4601-96ef-e764d2bcfa47",
+                  "id": "215",
+                  "name": "Text Rewriter and Spinner | English",
+                  "type": "url",
+                  "url": "https://smodin.me/"
+               }, {
+                  "date_added": "13256591768503577",
+                  "guid": "ebf010df-4966-459b-8b8b-3c4b8bb6ece2",
+                  "id": "216",
+                  "name": "Editor de video | Hacer videos y animaciones en línea | Powtoon",
+                  "type": "url",
+                  "url": "https://www.powtoon.com/"
+               }, {
+                  "date_added": "13256591798919026",
+                  "guid": "f15cd878-5b30-4ae1-8f0c-f7ff021b0164",
+                  "id": "217",
+                  "name": "Sci-Hub: removing barriers in the way of science",
+                  "type": "url",
+                  "url": "https://sci-hub.se/"
+               }, {
+                  "date_added": "13256591801199183",
+                  "guid": "cb21d05c-2302-46d9-9973-32bf1cc83586",
+                  "id": "218",
+                  "name": "Free Google Slides themes and Powerpoint templates | Slidesgo",
+                  "type": "url",
+                  "url": "https://slidesgo.com/"
+               }, {
+                  "date_added": "13256591815070934",
+                  "guid": "072b0031-971a-45ab-b71b-da4b065f9abd",
+                  "id": "219",
+                  "name": "Scribd Downloader, Issuu Downloader",
+                  "type": "url",
+                  "url": "https://docdownloader.com/"
+               }, {
+                  "date_added": "13256591826766929",
+                  "guid": "b3ade9b9-9794-4bf8-8011-b88bef378015",
+                  "id": "220",
+                  "name": "Cite This For Me: Harvard, APA, MLA Reference Generator",
+                  "type": "url",
+                  "url": "https://www.citethisforme.com/"
+               }, {
+                  "date_added": "13256591841766638",
+                  "guid": "7bc3adf7-906d-40b7-9d53-d8869ca07e91",
+                  "id": "221",
+                  "name": "Dialnet",
+                  "type": "url",
+                  "url": "https://dialnet.unirioja.es/"
+               }, {
+                  "date_added": "13256591855774882",
+                  "guid": "1021dd33-dd2e-4c3b-a44e-efd496816439",
+                  "id": "222",
+                  "name": "Chart, Diagram & Visual Canvas Software | Creately",
+                  "type": "url",
+                  "url": "https://creately.com/"
                } ],
                "date_added": "13253321237623490",
-               "date_modified": "0",
+               "date_modified": "13256591855774882",
                "guid": "83ce577a-43a1-4ee2-8c83-a15da99ed833",
                "id": "157",
                "name": "Enseñanza",
