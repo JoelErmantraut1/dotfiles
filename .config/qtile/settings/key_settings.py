@@ -9,7 +9,7 @@ from settings.common import (
         volume_up_command, icons_font, HOME, captures_path, note_app)
 from settings.functions import (
         get_screen_resolution, kill_all_windows, minimize_group, run_or_go,
-        run_or_bring, run_or_exit, show_hotkeys)
+        run_or_bring, run_or_exit, show_hotkeys, send_signal_next, send_signal_prev)
 
 # Imports
 
@@ -52,11 +52,13 @@ keys = [
         desc='Toggle through layouts in opposite direction'
     ),
     Key([alt], "Tab",
-        lazy.layout.next(),
+        # lazy.layout.next(),
+        lazy.function(send_signal_next),
         desc='Switch window focus to next pane(s) of stack'
     ),
     Key([alt, shift], "Tab",
-        lazy.layout.prev(),
+        # lazy.layout.prev(),
+        lazy.function(send_signal_prev),
         desc='Switch window focus to prev pane(s) of stack'
     ),
     Key([mod], "w",

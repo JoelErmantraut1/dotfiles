@@ -3,13 +3,17 @@
 import subprocess
 import re
 import screeninfo
+import signal
 
 from libqtile.lazy import lazy
 from libqtile import widget
 
 from settings.common import colors, widget_colors, icons_font, HOME
 
+from alttab.alttab_functions import alttab_start_process
 # Imports
+
+alttab_process = alttab_start_process()
 
 def get_screen_resolution():
     """
@@ -139,6 +143,20 @@ def show_hotkeys(qtile):
         app = "qtile"
 
     qtile.cmd_spawn(command.format(app.lower()))
+
+def send_signal_next(qtile):
+    """
+    Function called when next window combination
+    is pressed. Sends signal to change window.
+    """
+    alttab_process.send_signal(signal.SIGTERM)
+
+def send_signal_prev(qtile):
+    """
+    Function called when prev window combination
+    is pressed. Sends signal to change window.
+    """
+    alttab_process.send_signal(signal.SIGCONT)
 
 # -----------------------------------------------------------------
 
