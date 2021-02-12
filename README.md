@@ -16,3 +16,8 @@ This repository has all the config files that I have in my Arch Linux instalatio
 
 ## Adittional
 - It is configured a special keyboard layout, a variation of the default latam layout. For that are the files "output.xkb" and ".Xmodmap".
+
+## Screenshots
+![terminals screenshot](Imagenes/Capturas/dotfiles-screenshots/terminals_screen.png "Terminals Screenshot")
+![browser screenshot](Imagenes/Capturas/dotfiles-screenshots/browser_screen.png "Browser Screenshot")
+![neovim screenshot](Imagenes/Capturas/dotfiles-screenshots/nvim_screen.png "NeoVIM Screenshot")
