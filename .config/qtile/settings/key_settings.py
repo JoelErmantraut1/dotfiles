@@ -42,6 +42,10 @@ keys = [
         kill_all_windows,
         desc="Closes all windows"
     ),
+    Key([mod], "t",
+        lazy.spawn(HOME + "/.config/scripts/disable_mouse.sh"),
+        desc="Disables mouse"
+    ),
     ### Window Control
     Key([mod], "Tab",
         lazy.next_layout(),
@@ -67,7 +71,7 @@ keys = [
     ),
     Key([mod], "d",
         minimize_group,
-        desc="Minimize current window"
+        desc="Minimize all windows in current group"
     ),
     Key([mod, shift], "f",
         lazy.window.toggle_floating(),

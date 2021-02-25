@@ -167,14 +167,14 @@ widgets_bottom = [
         # background = widget_colors[2][0],
         # configured_keyboards=['latam', 'dvorak']
     # ),
-    widget_separator(widget_colors[3]),
-    widget.CurrentLayoutIcon(
-        # custom_icon_paths = [HOME + "/.config/qtile/icons"],
-        foreground = colors[2],
-        background = widget_colors[3][0],
-        padding = 0,
-        scale = 0.7,
-    ),
+    # widget_separator(widget_colors[3]),
+    # widget.CurrentLayoutIcon(
+        # # custom_icon_paths = [HOME + "/.config/qtile/icons"],
+        # foreground = colors[2],
+        # background = widget_colors[3][0],
+        # padding = 0,
+        # scale = 0.7,
+    # ),
     widget.CurrentLayout(
         foreground = colors[2],
         background = widget_colors[3][0],
