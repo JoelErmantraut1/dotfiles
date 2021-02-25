@@ -4,6 +4,7 @@ nitrogen --random --set-zoom-fill &
 picom -f &
 xset -b &
 xset s off -dpms &
+xset r rate 180 60 &
 xhost + &
 clipster -d &
 udiskie &

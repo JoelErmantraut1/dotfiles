@@ -4,7 +4,7 @@ let g:rainbow_active = 1
 " NERDTree
 let g:NERDTreeChDirMode = 1 " Cambia el directorio actual al nodo padre actual
 
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+"autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 " To close vim when NERDTree is the only buffer
 
 " NERDCommenter
@@ -42,15 +42,6 @@ endif
 
 let g:cosco_ignore_comment_lines = 1     " Default : 0
 " Cosco
-
-" IndentLine
-"let g:indentLine_char = ''
-"let g:indentLine_first_char = ''
-"let g:indentLine_showFirstIndentLevel = 1
-"let g:indentLine_setColors = 0
-
-"autocmd BufCreate NERD_tree_* :IndentLinesToggle
-" To avoid indent lines in NERDtree
 
 let g:lightline = {
       \ 'colorscheme': 'tender',

@@ -14,6 +14,7 @@ image/png=feh.desktop;org.nomacs.ImageLounge.desktop;
 inode/directory=org.kde.krusader.desktop;pcmanfm.desktop;ranger.desktop;
 text/plain=org.gnome.gedit.desktop;sublime_text.desktop;
 text/x-python=org.gnome.gedit.desktop;sublime_text.desktop;
+video/x-matroska=vlc.desktop;mplayer.desktop;org.shotcut.Shotcut.desktop;
 
 [Default Applications]
 application/pdf=FoxitReader.desktop
@@ -32,6 +33,7 @@ image/png=org.nomacs.ImageLounge.desktop
 inode/directory=org.kde.krusader.desktop;
 text/plain=sublime_text.desktop
 text/x-python=sublime_text.desktop
+video/x-matroska=vlc.desktop;
 x-scheme-handler/kite=kite-copilot.desktop
 
 [Removed Associations]

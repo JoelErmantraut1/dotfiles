@@ -1,6 +1,7 @@
 syntax on
 set number
 set mouse=a " Enables mouse interaction 
+set sidescroll=1
 set noerrorbells 
 set expandtab " TABs are space 
 set sw=4 
@@ -48,3 +49,5 @@ set whichwrap+=<,h
 
 let mapleader = " "
 " Tecla modificadora (leader)
+
+"nkcoeqbvqvobqebvqewbvunkcoeqbvqvobqebvqewbvunkcoeqbvqvobqebv::qewbvunkcoeqbvqvobqebvqewbvunkcoeqbvqvobqebvqewbvunkcoeqbvqvobqebvqewbvunkcoeqbvqvobqebvqewbvunkcoeqbvqvobqebvqewbvunkcoeqbvqvobqebvqewbvunkcoeqbvqvobqebvqewbvunkcoeqbvqvobqebvqewbvunkcoeqbvqvobqebvqewbv

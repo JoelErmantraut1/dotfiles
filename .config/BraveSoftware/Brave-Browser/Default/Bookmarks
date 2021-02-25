@@ -1,5 +1,5 @@
 {
-   "checksum": "3150b011a3251fb74b283c6e311a710e",
+   "checksum": "3209bb8357d7330df367256d63f8000d",
    "roots": {
       "bookmark_bar": {
          "children": [ {
@@ -55,20 +55,6 @@
                "type": "folder"
             }, {
                "children": [ {
-                  "date_added": "13246469913000000",
-                  "guid": "920d6dbc-0ba3-45bd-9d77-7ced76a34569",
-                  "id": "31",
-                  "name": "Mediciones Definitivas - Hojas de cálculo de Google",
-                  "type": "url",
-                  "url": "https://docs.google.com/spreadsheets/d/1Cdju3sT-J9Fhat3SkRYNWmrxg7AqCkNQ98GxwH_6mws/edit#gid=0"
-               }, {
-                  "date_added": "13245903459000000",
-                  "guid": "4927fb44-f944-44e8-a2fd-e96d1adfb2a8",
-                  "id": "32",
-                  "name": "Numpy vs OR-tools (1 BIN).ipynb - Colaboratory",
-                  "type": "url",
-                  "url": "https://colab.research.google.com/drive/1O-SQ-cd6wrWcQKnQO_jcUnD7XMNRAdq5#scrollTo=IybgcZc6QEZj"
-               }, {
                   "date_added": "13241623176000000",
                   "guid": "cb19d9f7-b4a0-428c-b280-5474bb0ed038",
                   "id": "33",
@@ -76,65 +62,22 @@
                   "type": "url",
                   "url": "https://drive.google.com/drive/folders/1HZ1FCAKg2_YrO6jyP-duQvYvZyAxvnAp"
                }, {
-                  "date_added": "13234416831000000",
-                  "guid": "04ae7b35-0eb7-424f-8412-c137ca56cf56",
-                  "id": "34",
-                  "name": "jiparraguirre / ultimate-pso — Bitbucket",
-                  "type": "url",
-                  "url": "https://bitbucket.org/jiparraguirre/ultimate-pso/src/master/"
-               }, {
-                  "date_added": "13247934497000000",
-                  "guid": "4cf99c6d-bdf6-41c1-be84-dd7e95bae9a7",
-                  "id": "35",
-                  "name": "Copia de PSO-Jax Knapspack Example Code - Colaboratory",
-                  "type": "url",
-                  "url": "https://colab.research.google.com/drive/14tkLdDy9pcHRIFDQuXNGya966gGvJRAH#scrollTo=99dcSqSCvGf-"
-               }, {
-                  "date_added": "13249158564000000",
-                  "guid": "2d2a3f44-a895-4b59-8e7f-38ed2abd44f6",
-                  "id": "36",
-                  "name": "BHI-Research/PSO-JAX: An accelerated Particle Swarm Optimization tool that uses JAX key component",
-                  "type": "url",
-                  "url": "https://github.com/BHI-Research/PSO-JAX"
-               }, {
-                  "children": [ {
-                     "date_added": "13248297150000000",
-                     "guid": "1231395f-3edf-4901-919d-893438d5a751",
-                     "id": "38",
-                     "name": "How JAX primitives work.ipynb - Colaboratory",
-                     "type": "url",
-                     "url": "https://colab.research.google.com/github/google/jax/blob/master/docs/notebooks/How_JAX_primitives_work.ipynb#scrollTo=tbOF0LB0EMne"
-                  }, {
-                     "date_added": "13248747425000000",
-                     "guid": "d76c491f-25d7-4250-948f-0d11db404906",
-                     "id": "39",
-                     "name": "jax.lax package — JAX documentation",
-                     "type": "url",
-                     "url": "https://jax.readthedocs.io/en/latest/jax.lax.html#parallel-operators"
-                  }, {
-                     "date_added": "13249065059000000",
-                     "guid": "c95c8f33-e659-409e-b50b-f368c1d60e0a",
-                     "id": "40",
-                     "name": "Pmap Cookbook - Colaboratory",
-                     "type": "url",
-                     "url": "https://colab.research.google.com/github/google/jax/blob/master/cloud_tpu_colabs/Pmap_Cookbook.ipynb"
-                  } ],
-                  "date_added": "13253321237619282",
-                  "date_modified": "0",
-                  "guid": "d7b552b9-f929-487b-b7d5-991ac871d47d",
-                  "id": "37",
-                  "name": "Paralelización",
-                  "type": "folder"
-               }, {
                   "date_added": "13250641073000000",
                   "guid": "704da12f-fb1a-4afb-a124-656bb6fb33a7",
                   "id": "41",
                   "name": "Efficient and Effective Practical Algorithms for the Set-Covering Problem Qi Yang, Jamie McPeek, Adam Nofsinger Department of Computer Science and Software. - ppt download",
                   "type": "url",
                   "url": "https://slideplayer.com/slide/6377863/"
+               }, {
+                  "date_added": "13258593796776988",
+                  "guid": "ec2ea759-4e7f-4257-b259-413380a3fcb6",
+                  "id": "238",
+                  "name": "1.1. Linear Models — scikit-learn 0.24.1 documentation",
+                  "type": "url",
+                  "url": "https://scikit-learn.org/stable/modules/linear_model.html"
                } ],
                "date_added": "13253321237619032",
-               "date_modified": "0",
+               "date_modified": "13258740565322860",
                "guid": "35115905-6794-4f20-8362-c892279c621c",
                "id": "30",
                "name": "Investigacion",
@@ -506,9 +449,16 @@
                "name": "Go con Ejemplos",
                "type": "url",
                "url": "http://goconejemplos.com/"
+            }, {
+               "date_added": "13257670860132762",
+               "guid": "99051710-8f75-4eff-bacf-37a31a5545d3",
+               "id": "227",
+               "name": "30 Bash Script Examples – Linux Hint",
+               "type": "url",
+               "url": "https://linuxhint.com/30_bash_script_examples/"
             } ],
             "date_added": "13253321237620778",
-            "date_modified": "13256877879082313",
+            "date_modified": "13257670860132762",
             "guid": "3cb3eb77-1bbe-4a98-8b3a-13a297b851ff",
             "id": "69",
             "name": "Informatica",
@@ -1360,9 +1310,66 @@
             "name": "MEGA",
             "type": "url",
             "url": "https://mega.nz/folder/1MVCTS6Z#4_ZGKyIYM5P2RmUhWQN2pA/folder/YRtnhIZS"
+         }, {
+            "children": [ {
+               "date_added": "13258421142917667",
+               "guid": "babb6d31-7788-488e-8849-f61ea4e854bf",
+               "id": "230",
+               "name": "Mitsubishi Colt GLX 94 Motor 1.5 12 valvulas - Autos - 1107993591",
+               "type": "url",
+               "url": "https://www.olx.com.ar/item/mitsubishi-colt-glx-94-motor-15-12-valvulas-iid-1107993591#main"
+            }, {
+               "date_added": "13258421533873966",
+               "guid": "ff367b47-d172-4e7e-a123-d3f687420185",
+               "id": "231",
+               "name": "vendo/permuto Clio 1.9 D - Autos - 1109721319",
+               "type": "url",
+               "url": "https://www.olx.com.ar/item/vendopermuto-clio-19-d-iid-1109721319"
+            }, {
+               "date_added": "13258421619376222",
+               "guid": "cf5bfabf-3bee-46ed-9f0c-cd3b1283348c",
+               "id": "232",
+               "name": "VENDO O PERMUTO Peugeot 206 año 99 - Autos - 1109697960",
+               "type": "url",
+               "url": "https://www.olx.com.ar/item/vendo-o-permuto-peugeot-206-ano-99-iid-1109697960"
+            }, {
+               "date_added": "13258421673391854",
+               "guid": "844eb012-fb89-450f-ba34-3c6176bce9f5",
+               "id": "233",
+               "name": "Rover 420 Di - Autos - 1106186591",
+               "type": "url",
+               "url": "https://www.olx.com.ar/item/rover-420-di-iid-1106186591"
+            }, {
+               "date_added": "13258422299052043",
+               "guid": "2bdc4301-97e2-447a-8e8b-53e9f8e0fe30",
+               "id": "234",
+               "name": "Facebook",
+               "type": "url",
+               "url": "https://www.facebook.com/commerce/listing/1139173359834897/?ref=share_attachment"
+            }, {
+               "date_added": "13258422347837616",
+               "guid": "8ccd28e7-b6b1-4398-895d-948eb9e44e8c",
+               "id": "235",
+               "name": "Facebook",
+               "type": "url",
+               "url": "https://www.facebook.com/commerce/listing/269410834570236/?ref=share_attachment"
+            }, {
+               "date_added": "13258422363334167",
+               "guid": "6a7b3dd5-7c88-4c62-b0f0-ce04afc8254b",
+               "id": "236",
+               "name": "Facebook",
+               "type": "url",
+               "url": "https://www.facebook.com/commerce/listing/890296535080070/?ref=share_attachment"
+            } ],
+            "date_added": "13258421134557969",
+            "date_modified": "13258422363334167",
+            "guid": "4e1b9754-aa68-47e1-9e88-eca1b305fd06",
+            "id": "229",
+            "name": "Autos",
+            "type": "folder"
          } ],
          "date_added": "13253321145079656",
-         "date_modified": "0",
+         "date_modified": "13258421142917667",
          "guid": "00000000-0000-4000-a000-000000000002",
          "id": "1",
          "name": "Barra de favoritos",

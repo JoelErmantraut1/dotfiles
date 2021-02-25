@@ -1,7 +1,7 @@
 " General
 nnoremap <leader>s :w<CR>
-nnoremap <leader>q :q<CR>
-nnoremap <leader>qq :q!<CR>
+nnoremap <leader>q :qa<CR>
+nnoremap <leader>qq :qa!<CR>
 nnoremap <leader>fs :Files<CR>
 
 " Resize windows
@@ -70,3 +70,7 @@ nnoremap <leader>b :BuffergatorToggle<CR>
 
 nnoremap <leader>, :CommaOrSemiColon<CR>
 " Cosco
+
+nnoremap <C-l> 5zl
+nnoremap <C-h> 5zh
+" Horizontal scroll

@@ -34,7 +34,6 @@ Plug 'KabbAmine/vCoolor.vim' " Color Selector
 Plug 'voldikss/vim-floaterm'
 Plug 'mhinz/vim-startify' " Start screen
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
-"Plug 'Yggdroot/indentLine' " Indent line
 
 " Codificacion
 Plug 'majutsushi/tagbar'
