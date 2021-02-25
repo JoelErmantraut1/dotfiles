@@ -1,0 +1,291 @@
+# i3 config file (v4)
+#
+# Please see https://i3wm.org/docs/userguide.html for a complete reference!
+
+set $mod Mod4
+# Super key
+set $alt Mod1
+# Alt key
+set $num_lock Mod2
+# Num Lock Modifier
+
+# Font for window titles. Will also be used by the bar unless a different font
+# is used in the bar {} block below.
+font pango:monospace 8
+
+#client.focused          #0092FF #0092FF #ffffff #2e9ef4   #285577
+#client.focused_inactive #333333 #5f676a #ffffff #484e50   #5f676a
+
+# Use Mouse+$mod to drag floating windows to their wanted position
+floating_modifier $mod
+
+# start a terminal
+bindsym $mod+Return exec alacritty
+
+# kill focused window
+bindsym $mod+w kill
+
+# start dmenu (a program launcher)
+bindsym Ctrl+Shift+Return exec --no-startup-id dmenu_run -p "»" -i -nf "#888888" -nb "#292d3e" -sf "#ffffff" -sb "#005577" -fn "UbuntuMono Nerd Font"
+bindsym $mod+Shift+Return exec --no-startup-id dmenu_extended_run
+
+# change focus
+bindsym $mod+Left   focus left
+bindsym $mod+Down   focus down
+bindsym $mod+Up     focus up
+bindsym $mod+Right  focus right
+
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
+
+# move focused window
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
+
+# alternatively, you can use the cursor keys:
+bindsym $mod+Shift+Left     move left
+bindsym $mod+Shift+Down     move down
+bindsym $mod+Shift+Up       move up
+bindsym $mod+Shift+Right    move right
+
+# split in horizontal orientation
+bindsym $mod+y split h
+# split in vertical orientation
+bindsym $mod+v split v
+
+# enter fullscreen mode for the focused container
+bindsym $mod+F11 fullscreen toggle
+
+# change container layout (stacked, tabbed, toggle split)
+bindsym $mod+i layout stacking
+bindsym $mod+o layout tabbed
+bindsym $mod+u layout toggle split
+
+# toggle tiling / floating
+bindsym $mod+f floating toggle
+
+# change focus between tiling / floating windows
+#bindsym $mod+f focus mode_toggle
+
+# focus the parent container
+#bindsym $mod+a focus parent
+
+# focus the child container
+bindsym $mod+n focus child
+
+# Make the currently focused window a scratchpad
+bindsym $mod+Shift+minus move scratchpad
+# Show the first scratchpad window
+bindsym $mod+minus scratchpad show
+
+# read 1 character and mark the current window with this character
+bindsym $mod+m exec i3-input -F 'mark %s' -l 1 -P 'Mark: '
+# read 1 character and go to the window with the character
+bindsym $mod+g exec i3-input -F '[con_mark="%s"] focus' -l 1 -P 'Goto: '
+
+# Define names for default workspaces for which we configure key bindings later on.
+# We use variables to avoid repeating the names in multiple places.
+set $ws1 1
+set $ws2 2
+set $ws3 3
+set $ws4 4
+set $ws5 5
+set $ws6 6
+set $ws7 7
+set $ws8 8
+set $ws9 9
+set $ws10 10
+
+# switch to workspace
+bindsym $mod+exclam         workspace number $ws1
+bindsym $mod+quotedbl       workspace number $ws2
+bindsym $mod+numbersign     workspace number $ws3
+bindsym $mod+dollar         workspace number $ws4
+bindsym $mod+percent        workspace number $ws5
+bindsym $mod+ampersand      workspace number $ws6
+bindsym $mod+slash          workspace number $ws7
+bindsym $mod+parenleft      workspace number $ws8
+bindsym $mod+parenright     workspace number $ws9
+bindsym $mod+equal          workspace number $ws10
+
+bindsym $mod+a workspace back_and_forth
+
+bindsym $mod+$num_lock+KP_1 workspace $ws1
+bindsym $mod+$num_lock+KP_2 workspace $ws2
+bindsym $mod+$num_lock+KP_3 workspace $ws3
+bindsym $mod+$num_lock+KP_4 workspace $ws4
+bindsym $mod+$num_lock+KP_5 workspace $ws5
+bindsym $mod+$num_lock+KP_6 workspace $ws6
+bindsym $mod+$num_lock+KP_7 workspace $ws7
+bindsym $mod+$num_lock+KP_8 workspace $ws8
+bindsym $mod+$num_lock+KP_9 workspace $ws9
+bindsym $mod+$num_lock+KP_0 workspace $ws10
+
+# move focused container to workspace
+bindsym $mod+Shift+exclam       move container to workspace number $ws1
+bindsym $mod+Shift+quotedbl     move container to workspace number $ws2
+bindsym $mod+Shift+numbersign   move container to workspace number $ws3
+bindsym $mod+Shift+dollar       move container to workspace number $ws4
+bindsym $mod+Shift+percent      move container to workspace number $ws5
+bindsym $mod+Shift+ampersand    move container to workspace number $ws6
+bindsym $mod+Shift+slash        move container to workspace number $ws7
+bindsym $mod+Shift+8            move container to workspace number $ws8
+bindsym $mod+Shift+9            move container to workspace number $ws9
+bindsym $mod+Shift+equal        move container to workspace number $ws10
+
+for_window [workspace="10"] floating enable
+# Floating workspace
+
+# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+bindsym $mod+Shift+r restart
+# exit i3 (logs you out of your X session)
+bindsym $mod+Shift+q exec "/home/joel/.config/dmenu/dmenu-session-options.sh"
+bindsym $mod+$alt+l exec i3-msg workspace 1 && exec dm-tool lock
+# Moves to safe workspace
+bindsym $mod+Ctrl+q [class=”.*”] kill
+
+bindsym $mod+x exec dunst close-all
+bindsym $mod+$alt+x exec dunst close
+bindsym $mod+Shift+space exec "rofi -combi-modi window,drun -show combi -modi combi"
+
+bindsym $mod+Shift+s exec flameshot gui
+bindsym $mod+Shift+Print exec "flameshot full -p /home/joel/Imagenes/Capturas"
+bindsym Print exec "flameshot screen -c"
+
+bindsym $mod+Shift+v exec "clipster -s -c"
+bindsym $mod+period exec "rofimoji"
+bindsym $mod+$alt+p exec "python ~/.config/dmenu/dmenu-advance-passmenu.py"
+
+bindsym $mod+$alt+a exec gnote
+bindsym $mod+$alt+c exec qalculate-gtk
+bindsym $mod+$alt+w exec franz
+bindsym $mod+$alt+n exec brave
+bindsym $mod+e      exec krusader
+bindsym $mod+$alt+e exec pcmanfm
+bindsym $mod+$alt+v exec virtualbox
+
+bindsym $mod+$alt+u exec "/home/joel/.config/dmenu/dmenu-expulse-drives.sh" 
+
+# Use pactl to adjust volume in PulseAudio.
+set $refresh_i3status killall -SIGUSR1 i3status
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5% && $refresh_i3status
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5% && $refresh_i3status
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
+
+# Control media
+bindsym XF86Tools exec spotify
+bindsym XF86AudioPlay exec playerctl play-pause
+bindsym XF86AudioPrev exec playerctl previous 
+bindsym XF86AudioNext exec playerctl next
+bindsym XF86AudioStop exec playerctl stop 
+
+# resize window (you can also use the mouse for that)
+mode "resize" {
+    # These bindings trigger as soon as you enter the resize mode
+
+    # Pressing left will shrink the window’s width.
+    # Pressing right will grow the window’s width.
+    # Pressing up will shrink the window’s height.
+    # Pressing down will grow the window’s height.
+    bindsym Left    resize shrink width 10 px or 10 ppt
+    bindsym Down    resize grow height 10 px or 10 ppt
+    bindsym Up      resize shrink height 10 px or 10 ppt
+    bindsym Right   resize grow width 10 px or 10 ppt
+
+    # Move window position
+    bindsym $mod+Left   move left  10 px
+    bindsym $mod+Up     move up    10 px
+    bindsym $mod+Down   move down  10 px
+    bindsym $mod+Right  move right 10 px
+
+    # back to normal: Enter or Escape or $mod+r
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+    bindsym mod+r  mode "default"
+}
+
+bindsym $mod+r mode "resize"
+
+# window assignment to workspaces
+# SECOND WORKSPACE
+assign [class="Brave-browser"] $ws2
+assign [class="Google-chrome"] $ws2
+assign [class="Opera"] $ws2
+assign [class="Firefox"] $ws2
+assign [class="Chromium"] $ws2
+assign [class="qutebrowser"] $ws2
+# THIRD WORKSPACE
+assign [class="krusader"] $ws3
+assign [class="pcmanfm"] $ws3
+assign [class="ranger"] $ws3
+assign [class="nomacs"] $ws3
+assign [class="xarchiver"] $ws3
+assign [class="file-roller"] $ws3
+# FOURTH WORKSPACE
+assign [class="sublime_text"] $ws4
+assign [class="Atollic TrueSTUDIO for STM32"] $ws4
+assign [class="jetbrains-pycharm-ce"] $ws4
+assign [class="gedit"] $ws4
+assign [class="jetbrains-studio"] $ws4
+assign [class="vscodium"] $ws4
+assign [class="arduino"] $ws4
+# FIFTH WORKSPACE
+assign [class="prepros"] $ws5
+assign [class="wps"] $ws5
+# SIXTH WORKSPACE
+assign [class="Franz"] $ws6
+assign [class="whatsdesk"] $ws6
+assign [class="Telegram"] $ws6
+assign [class="droidcam"] $ws6
+assign [class="zoom"] $ws6
+assign [class="discord"] $ws6
+# SEVENTH WORKSPACE
+assign [class="vlc"] $ws7
+for_window [class="Spotify"] move to workspace $ws7
+# EIGHTH WORKSPACE
+assign [class="VirtualBox Manager"] $ws8
+# NINTH WORKSPACE
+assign [class="lxappearance"] $ws9
+assign [class="pavucontrol"] $ws9
+assign [class="gpartedbin"] $ws9
+assign [class="grub-customizer"] $ws9 
+
+# Sticky Apps
+for_window [class="Gnote"] sticky enable
+
+# Floating windows
+for_window [class="Gnote"]          floating enable
+for_window [class="confirm"]        floating enable
+for_window [class="dialog"]         floating enable
+for_window [class="download"]       floating enable
+for_window [class="error"]          floating enable
+for_window [class="file_progress"]  floating enable
+for_window [class="notification"]   floating enable
+for_window [class="splash"]         floating enable
+for_window [class="toolbar"]        floating enable
+for_window [class="confirmreset"]   floating enable
+for_window [class="makebranch"]     floating enable
+for_window [class="maketag"]        floating enable
+for_window [class="qalculate-gtk"]  floating enable
+for_window [class="zenity"]         floating enable
+for_window [class="ssh-askpass"]    floating enable
+for_window [title="branchdialog"]   floating enable
+for_window [title="pinentry"]       floating enable
+
+# Programs on start
+exec alacritty
+exec brave
+exec krusader
+
+# Configuration properties
+focus_on_window_activation smart
+workspace_auto_back_and_forth yes 
+focus_follows_mouse no
+show_marks yes
+
+# Run autostart script
+exec_always "/home/joel/.config/i3-scripts/autostart.sh"
