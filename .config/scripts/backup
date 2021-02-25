@@ -1,0 +1,9 @@
+#!/bin/bash
+
+DAY=$(date +%A)
+
+if [ -e /home/datos/SystemBackUps/$DAY ] ; then
+  rm -fr /home/datos/SystemBackUps/$DAY
+fi
+
+rsync -a --delete --quiet --inplace --backup --backup-dir=/home/datos/SystemBackUps/$DAY /home/datos/SystemBackUps/backup/ /home/datos/SystemBackUps/backup_full/
