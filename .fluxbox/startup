@@ -16,6 +16,7 @@
 volumeicon &
 udiskie -t &
 sway-alttab &
+~/.config/polybar/launch.sh &
 
 # And last but not least we start fluxbox.
 # Because it is the last app you have to run it with ''exec'' before it.

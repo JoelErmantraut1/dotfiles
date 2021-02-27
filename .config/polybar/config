@@ -121,11 +121,11 @@ font-4 = "Font Awesome 5 Brands:pixelsize=8;1"
 
 modules-left = i3 xwindow
 modules-center = 
-modules-right = arrow1 memory2 arrow2 cpu2 arrow3 pavolume arrow2 arch-aur-updates arrow3 date
+modules-right = arrow1 backgrounds arrow3 memory2 arrow2 cpu2 arrow3 pavolume arrow2 arch-aur-updates arrow3 date
 
 ;dim-value = 1.0
 
-tray-position =  
+tray-position = right 
 tray-detached = false
 tray-maxsize = 20
 tray-background = ${colors.background}
@@ -147,8 +147,8 @@ enable-ipc = true
 click-left =
 click-middle =
 click-right =
-scroll-up = i3wm-wsnext
-scroll-down = i3wm-wsprev
+;scroll-up = i3wm-wsnext
+;scroll-down = i3wm-wsprev
 double-click-left =
 double-click-middle =
 double-click-right =
@@ -293,7 +293,7 @@ format-background = ${colors.background}
 type = custom/text
 content = "%{T2} %{T-}"
 content-font = 2
-content-foreground = #668bd7
+content-foreground = #8d62ad
 content-background = #282c34
 
 [module/arrow2]
@@ -321,7 +321,7 @@ content-background = #8d62a9
 [module/arch-aur-updates]
 type = custom/script
 exec = ~/.config/polybar/scripts/check-all-updates.sh
-interval = 1000
+interval = 1800
 label = Updates: %output%
 format-foreground = #fefefe
 format-background = #8d62ad
@@ -341,6 +341,16 @@ format-prefix-foreground = #FFBB00
 format-underline = #FFBB00
 
 ################################################################################
+
+[module/backgrounds]
+; grey to Blue
+type = custom/text
+content = "  Background"
+content-foreground = #fefefe 
+content-background = #8d62ad
+ 
+click-left = nitrogen --random --set-zoom-fill &
+click-right = nitrogen
 
 [module/backlight-acpi]
 inherit = module/xbacklight
@@ -506,7 +516,7 @@ type = internal/cpu
 interval = 1
 format-foreground = #fefefe
 format-background = #8d62ad
-format-prefix = " "
+format-prefix = "  "
 format-prefix-foreground = #fefefe
 
 label-font = 1
@@ -522,7 +532,7 @@ format = <label>
 ;   %percentage% (default) - total cpu load
 ;   %percentage-cores% - load percentage for each core
 ;   %percentage-core[1-9]% - load percentage for specific core
-label = Cpu %percentage:1%%
+label = %percentage:%%
 
 ################################################################################
 
@@ -683,7 +693,7 @@ interval = 1
 ;   %mb_total%
 label = %mb_used%
 
-format = Mem <label>
+format = <label>
 format-prefix = "  "
 format-prefix-foreground = #fefefe
 format-foreground = #fefefe
@@ -789,7 +799,7 @@ format-underline = #FFBB00
 type = custom/script
 tail = true
 label =  %output%
-exec = amixer get Master |grep % |awk '{print $5}'|sed -e 's/\[//' -e 's/\]//' 
+exec = ~/.config/polybar/scripts/pavolume.sh
 click-right = exec pavucontrol
 click-left = amixer -D pulse sset Master toggle
 scroll-up = amixer -D pulse sset Master 2%+ 
@@ -1130,3 +1140,11 @@ format-background = ${colors.background}
 
 ###############################################################################
 # vim:ft=dosini
+
+[module/polywins]
+type = custom/script
+exec = ~/.config/polybar/scripts/polywins.sh 2>/dev/null
+format = <label>
+label = %output%  
+label-padding = 0
+tail = true

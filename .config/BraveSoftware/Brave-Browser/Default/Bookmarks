@@ -1,5 +1,5 @@
 {
-   "checksum": "3209bb8357d7330df367256d63f8000d",
+   "checksum": "cbc8ccc58a44cb529415b676e032335f",
    "roots": {
       "bookmark_bar": {
          "children": [ {
@@ -380,6 +380,28 @@
                "name": "PendriveDucky",
                "type": "folder"
             }, {
+               "children": [ {
+                  "date_added": "13258925293803251",
+                  "guid": "dd44a34d-e55e-406a-bc39-d36f44074865",
+                  "id": "241",
+                  "name": "ziberna/i3-py: Python based tools for i3 users and developers",
+                  "type": "url",
+                  "url": "https://github.com/ziberna/i3-py"
+               }, {
+                  "date_added": "13258925311707293",
+                  "guid": "92c0fb82-e39a-4744-8b51-9991ac759035",
+                  "id": "242",
+                  "name": "i3: i3 User’s Guide",
+                  "type": "url",
+                  "url": "https://i3wm.org/docs/userguide.html"
+               } ],
+               "date_added": "13258925233763340",
+               "date_modified": "13258926131331278",
+               "guid": "b08eff3c-5b56-4ffe-8e18-bb69f75a3266",
+               "id": "240",
+               "name": "i3",
+               "type": "folder"
+            }, {
                "date_added": "13239011082000000",
                "guid": "336ed74f-4c6c-4ef1-87d6-b8c555efccd4",
                "id": "80",
@@ -458,7 +480,7 @@
                "url": "https://linuxhint.com/30_bash_script_examples/"
             } ],
             "date_added": "13253321237620778",
-            "date_modified": "13257670860132762",
+            "date_modified": "13258925293803251",
             "guid": "3cb3eb77-1bbe-4a98-8b3a-13a297b851ff",
             "id": "69",
             "name": "Informatica",

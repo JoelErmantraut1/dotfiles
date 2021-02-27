@@ -163,3 +163,5 @@ Mod4 Mod1 v :Exec virtualbox
 Mod4 Mod1 d :Exec /home/joel/.config/dmenu/dmenu-edit-configs.sh
 Mod4 Mod1 w :Exec franz
 Mod4 Mod1 u :Exec /home/joel/.config/dmenu/dmenu-expulse-drives.sh
+Mod4 Mod1 a :Exec gnote
+Mod4 Mod1 p :Exec python /home/joel/.config/dmenu/dmenu-advance-passmenu.py
