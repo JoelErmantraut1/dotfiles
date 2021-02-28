@@ -1,5 +1,4 @@
 # i3 config file (v4)
-#
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
 set $mod Mod4
@@ -148,7 +147,7 @@ for_window [workspace="10"] floating enable
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+q exec $dmenu_session
-bindsym $mod+$alt+l exec i3-msg workspace 1 && exec dm-tool lock
+bindsym $mod+$alt+l exec i3-msg workspace 1 && exec betterlockscreen -l dim blur
 # Moves to safe workspace
 bindsym $mod+Ctrl+q [class=".*"] kill
 
@@ -212,52 +211,53 @@ mode "resize" {
     bindsym Escape mode "default"
     bindsym mod+r  mode "default"
 }
-
 bindsym $mod+r mode "resize"
+
+bindsym $mod+t nop
 
 # window assignment to workspaces
 # SECOND WORKSPACE
-assign [class="Brave-browser"] $ws2
-assign [class="Google-chrome"] $ws2
-assign [class="Opera"] $ws2
-assign [class="Firefox"] $ws2
-assign [class="Chromium"] $ws2
-assign [class="qutebrowser"] $ws2
+assign [class="Brave-browser"]  $ws2
+assign [class="Google-chrome"]  $ws2
+assign [class="Opera"]          $ws2
+assign [class="Firefox"]        $ws2
+assign [class="Chromium"]       $ws2
+assign [class="qutebrowser"]    $ws2
 # THIRD WORKSPACE
-assign [class="krusader"] $ws3
-assign [class="pcmanfm"] $ws3
-assign [class="ranger"] $ws3
-assign [class="nomacs"] $ws3
-assign [class="xarchiver"] $ws3
-assign [class="file-roller"] $ws3
+assign [class="krusader"]       $ws3
+assign [class="pcmanfm"]        $ws3
+assign [class="ranger"]         $ws3
+assign [title="nomacs"]         $ws3
+assign [class="xarchiver"]      $ws3
+assign [class="file-roller"]    $ws3
 # FOURTH WORKSPACE
-assign [class="sublime_text"] $ws4
-assign [class="Atollic TrueSTUDIO for STM32"] $ws4
-assign [class="jetbrains-pycharm-ce"] $ws4
-assign [class="gedit"] $ws4
-assign [class="jetbrains-studio"] $ws4
-assign [class="vscodium"] $ws4
-assign [class="arduino"] $ws4
+assign [class="sublime_text"]                   $ws4
+assign [class="Atollic TrueSTUDIO for STM32"]   $ws4
+assign [class="jetbrains-pycharm-ce"]           $ws4
+assign [class="gedit"]                          $ws4
+assign [class="jetbrains-studio"]               $ws4
+assign [class="vscodium"]                       $ws4
+assign [class="arduino"]                        $ws4
 # FIFTH WORKSPACE
-assign [class="prepros"] $ws5
-assign [class="wps"] $ws5
+assign [class="prepros"]    $ws5
+assign [class="wps"]        $ws5
 # SIXTH WORKSPACE
-assign [class="Franz"] $ws6
-assign [class="whatsdesk"] $ws6
-assign [class="Telegram"] $ws6
-assign [class="droidcam"] $ws6
-assign [class="zoom"] $ws6
-assign [class="discord"] $ws6
+assign [class="Franz"]      $ws6
+assign [class="whatsdesk"]  $ws6
+assign [class="Telegram"]   $ws6
+assign [class="droidcam"]   $ws6
+assign [class="zoom"]       $ws6
+assign [class="discord"]    $ws6
 # SEVENTH WORKSPACE
-assign [class="vlc"] $ws7
-for_window [class="Spotify"] move to workspace $ws7
+assign [class="vlc"]                            $ws7
+for_window [class="Spotify"] move to workspace  $ws7
 # EIGHTH WORKSPACE
 assign [class="VirtualBox Manager"] $ws8
 # NINTH WORKSPACE
-assign [class="lxappearance"] $ws9
-assign [class="pavucontrol"] $ws9
-assign [class="gpartedbin"] $ws9
-assign [class="grub-customizer"] $ws9 
+assign [class="lxappearance"]       $ws9
+assign [class="pavucontrol"]        $ws9
+assign [class="gpartedbin"]         $ws9
+assign [class="grub-customizer"]    $ws9 
 
 # Sticky Apps
 for_window [class="Gnote"]          sticky enable
