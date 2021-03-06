@@ -17,21 +17,10 @@
     "indicator_alias": "",
     "indicator_edit": "*",
     "indicator_submenu": "",
-    "menu": "dmenu",
+    "menu": "dmenu_styled",
     "menu_arguments": [
-        "-i",
-        "-nf",
-        "#888888",
-        "-nb",
-        "#292d3e",
-        "-sf",
-        "#ffffff",
-        "-sb",
-        "#005577",
-        "-fn",
-        "UbuntuMono Nerd Font",
         "-l",
-        "10"
+        "20"
     ],
     "password_helper": [
         "zenity",
@@ -42,7 +31,7 @@
     "path_shellCommand": "~/.dmenuEextended_shellCommand.sh",
     "prompt": "\u00bb",
     "scan_hidden_folders": false,
-    "terminal": "urxvt",
+    "terminal": "alacritty",
     "terminal_editor": "nvim",
     "valid_extensions": [
         "py",
