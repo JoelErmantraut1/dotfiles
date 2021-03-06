@@ -13,7 +13,7 @@ password_files=( "$prefix"/**/*.gpg )
 password_files=( "${password_files[@]#"$prefix"/}" )
 password_files=( "${password_files[@]%.gpg}" )
 
-password=$(printf '%s\n' "${password_files[@]}" | dmenu -p 'Config: ' -i -nf '#888888' -nb '#292d3e' -sf '#ffffff' -sb '#005577' -fn 'UbuntuMono Nerd Font' "$@")
+password=$(printf '%s\n' "${password_files[@]}" | dmenu_styled -p 'Select: ' "$@")
 
 [[ -n $password ]] || exit
 

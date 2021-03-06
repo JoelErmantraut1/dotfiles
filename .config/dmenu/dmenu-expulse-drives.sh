@@ -20,7 +20,7 @@ do
     pens_name+=("${strarr[-1]}")
 done
 
-choice="$(echo -e "${pens_name[@]}" | dmenu -p 'Desmontar: ' -i -nf '#888888' -nb '#292d3e' -sf '#ffffff' -sb '#005577' -fn 'UbuntuMono Nerd Font')" || exit 1
+choice="$(echo -e "${pens_name[@]}" | dmenu_styled -p 'Unmount: ')" || exit 1
 
 getIndex
 

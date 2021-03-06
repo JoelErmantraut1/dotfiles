@@ -2,7 +2,6 @@
 # -*- coding:utf-8 -*-
 
 """
-
 This script launches dmenu passmenu utility,
 enable to select a password and writes it.
 
@@ -46,7 +45,7 @@ def launch_dmenu(options):
     Runs dmenu with given options.
     """
     options = " ".join(["'{}'".format(item) for item in options])
-    string = 'list=(' + options + ');password=$(printf "%s\n" "${list[@]}" | dmenu -p "Config: " -i -nf "#888889" -nb "#292d3e" -sf "#ffffff" -sb "#005577" -fn "UbuntuMono Nerd Font");echo $password;'
+    string = 'list=(' + options + ');password=$(printf "%s\n" "${list[@]}" | dmenu_styled -p "Select: ");echo $password;'
     return get_cmd_output(string)
 
 def get_passwords():

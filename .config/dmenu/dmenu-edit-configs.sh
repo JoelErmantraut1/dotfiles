@@ -10,7 +10,7 @@ rofi
 ranger
 dunst")
 
-choice=$(echo -e "${options[@]}" | dmenu -p 'Config: ' -i -nf '#888888' -nb '#292d3e' -sf '#ffffff' -sb '#005577' -fn 'UbuntuMono Nerd Font') || exit 1
+choice=$(echo -e "${options[@]}" | dmenu_styled -p 'Config: ') || exit 1
 
 case "$choice" in
 	alacritty)
