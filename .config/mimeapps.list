@@ -1,5 +1,5 @@
 [Added Associations]
-application/pdf=foxitreader.desktop;
+application/pdf=mupdf.desktop;wps-office-pdf.desktop;foxitreader.desktop;firefox.desktop;eu.scarpetta.PDFMixTool.desktop;chromium.desktop;mcomix.desktop;google-chrome.desktop;
 application/wps-office.docx=wps-office-wps.desktop;file-roller.desktop;xarchiver.desktop;
 application/wps-office.pptx=wps-office-wpp.desktop;file-roller.desktop;xarchiver.desktop;
 application/wps-office.xlsx=wps-office-et.desktop;file-roller.desktop;xarchiver.desktop;
@@ -17,7 +17,7 @@ text/x-python=org.gnome.gedit.desktop;sublime_text.desktop;
 video/x-matroska=vlc.desktop;mplayer.desktop;org.shotcut.Shotcut.desktop;
 
 [Default Applications]
-application/pdf=FoxitReader.desktop
+application/pdf=mupdf.desktop;
 application/ppdf=FoxitReader.desktop
 application/wps-office.docx=wps-office-wps.desktop;
 application/wps-office.pptx=wps-office-wpp.desktop;

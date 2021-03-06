@@ -1,5 +1,5 @@
 {
-   "checksum": "cbc8ccc58a44cb529415b676e032335f",
+   "checksum": "9b77c2f41cb0bdeb5c55949a046cf8f5",
    "roots": {
       "bookmark_bar": {
          "children": [ {
@@ -394,9 +394,16 @@
                   "name": "i3: i3 User’s Guide",
                   "type": "url",
                   "url": "https://i3wm.org/docs/userguide.html"
+               }, {
+                  "date_added": "13259126863883178",
+                  "guid": "30270180-854b-4785-9a30-10f56ad50ce1",
+                  "id": "244",
+                  "name": "Create a palette - Coolors",
+                  "type": "url",
+                  "url": "https://coolors.co/0a369d-4472ca-5e7ce2-92b4f4-cfdee7"
                } ],
                "date_added": "13258925233763340",
-               "date_modified": "13258964396293295",
+               "date_modified": "13259349126295042",
                "guid": "b08eff3c-5b56-4ffe-8e18-bb69f75a3266",
                "id": "240",
                "name": "i3",

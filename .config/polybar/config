@@ -16,8 +16,8 @@ compositing-underline = over
 compositing-border = over
 
 ; Define fallback values used by all module formats
-format-foreground = #FF0000
-format-background = #00FF00
+format-foreground = #bd2c40 
+format-background = #008F00
 format-underline =
 format-overline =
 format-spacing =
@@ -26,34 +26,25 @@ format-margin =
 format-offset =
 
 [colors]
-; Nord theme ============
-background = #282c34
-foreground = #abb2bf
+; My own theme ==========
+background = #0A369D
+foreground = #92B4F4
 alert = #bd2c40
-volume-min = #a3be8c
-volume-med = #ebcb8b
-volume-max = #bf616a
-; =======================
+border = #CFDEE7
+item1 = #4472CA
+item2 = #5E7CE2
+item-foreground = #CFDEE7
+; ======================
 
-; Gotham theme ==========
-; background = #0a0f14
-; foreground = #99d1ce
-; alert = #d26937
-; volume-min = #2aa889
-; volume-med = #edb443
-; volume-max = #c23127
-; =======================
-
-; INTRCPTR theme ============
-;background = ${xrdb:color0:#222}
-;background = #aa000000
-;background-alt = #444
-;foreground = ${xrdb:color7:#222}
-;foreground = #fff
-;foreground-alt = #555
-;primary = #ffb52a
-;secondary = #e60053
+; Nord theme ============
+;background = #282c34
+;foreground = #abb2bf
 ;alert = #bd2c40
+;border = #000000
+;item1 = #8b62a9
+;item2 = #668bd7
+;item-foreground = #ffffff
+; =======================
 
 ################################################################################
 ################################################################################
@@ -84,14 +75,14 @@ foreground = ${colors.foreground}
 
 radius = 0.0
 line-size = 2
-line-color = #000000
+line-color = ${colors.border}
 
 border-size = 0
 ;border-left-size = 25
 ;border-right-size = 25
 ;border-top-size = 0
 ;border-bottom-size = 25
-border-color = #000000
+border-color = ${colors.border}
 
 padding-left = 1
 padding-right = 1
@@ -221,7 +212,7 @@ format = <label-state> <label-mode>
 
 label-mode = %mode%
 label-mode-padding = 2
-label-mode-foreground = #000000
+label-mode-foreground = ${colors.item-foreground}
 label-mode-background = #FFBB00
 
 ; Available tokens:
@@ -234,7 +225,7 @@ label-mode-background = #FFBB00
 label-focused = %icon% %name%
 label-focused-background = ${colors.background}
 label-focused-foreground = ${colors.foreground}
-label-focused-underline = #AD69AF
+label-focused-underline = ${colors.border}
 label-focused-padding = 2
 
 ; Available tokens:
@@ -263,7 +254,7 @@ label-visible-padding = 2
 ; urgent = Workspace with urgency hint set
 label-urgent = %icon% %name%
 label-urgent-background = ${self.label-focused-background}
-label-urgent-foreground = #db104e
+label-urgent-foreground = ${colors.alert}
 label-urgent-padding = 2
 
 format-foreground = ${colors.foreground}
@@ -280,24 +271,24 @@ format-background = ${colors.background}
 type = custom/text
 content = "%{T2} %{T-}"
 content-font = 2
-content-foreground = #8d62ad
-content-background = #282c34
+content-foreground = ${colors.item1}
+content-background = ${colors.background}
 
 [module/arrow2]
 ; grey to Blue
 type = custom/text
 content = "%{T2} %{T-}"
 content-font = 2
-content-foreground = #8b62a9
-content-background = #668bd7
+content-foreground = ${colors.item1} 
+content-background = ${colors.item2}
 
 [module/arrow3]
 ; grey to Blue
 type = custom/text
 content = "%{T2} %{T-}"
 content-font = 2
-content-foreground = #668bd7
-content-background = #8d62a9
+content-foreground = ${colors.item2}
+content-background = ${colors.item1}
 
 ################################################################################
 ###############################################################################
@@ -310,10 +301,10 @@ type = custom/script
 exec = ~/.config/polybar/scripts/check-all-updates.sh
 interval = 1800
 label = Updates: %output%
-format-foreground = #fefefe
-format-background = #8d62ad
+format-foreground = ${colors.foreground}
+format-background = ${colors.item1}
 format-prefix = "  "
-format-prefix-foreground = #fefefe
+format-prefix-foreground = ${colors.item-foreground}
 
 ################################################################################
 
@@ -321,8 +312,8 @@ format-prefix-foreground = #fefefe
 ; grey to Blue
 type = custom/text
 content = "  Fondos"
-content-foreground = #fefefe 
-content-background = #8d62ad
+content-foreground = ${colors.item-foreground}
+content-background = ${colors.item1}
  
 click-left = ~/.config/polybar/scripts/change_wallpaper.sh
 click-right = nitrogen
@@ -335,10 +326,10 @@ type = internal/cpu
 ; Seconds to sleep between updates
 ; Default: 1
 interval = 1
-format-foreground = #fefefe
-format-background = #8d62ad
+format-foreground = ${colors.item-foreground}
+format-background = ${colors.item1}
 format-prefix = "  "
-format-prefix-foreground = #fefefe
+format-prefix-foreground = ${colors.item-foreground}
 
 label-font = 1
 
@@ -367,9 +358,9 @@ interval = 5
 date = "%Y-%m-%d%"
 time = "%H:%M"
 format-prefix = "   "
-format-prefix-foreground = #fefefe
-format-foreground = #fefefe
-format-background = #668bd7 
+format-prefix-foreground = ${colors.item-foreground}
+format-foreground = ${colors.item-foreground}
+format-background = ${colors.item2}
 label = "%date% | %time% "
 
 #################################################################
@@ -391,9 +382,9 @@ label = %mb_used%
 
 format = <label>
 format-prefix = "  "
-format-prefix-foreground = #fefefe
-format-foreground = #fefefe
-format-background = #668bd7
+format-prefix-foreground = ${colors.item-foreground}
+format-foreground = ${colors.item-foreground}
+format-background = ${colors.item2}
 
 ################################################################################
 
@@ -406,8 +397,8 @@ click-right = exec pavucontrol
 click-left = amixer -D pulse sset Master toggle
 scroll-up = amixer -D pulse sset Master 2%+ 
 scroll-down = amixer -D pulse sset Master 2%- 
-format-foreground = #fefefe
-format-background = #668bd7
+format-foreground = ${colors.item-foreground}
+format-background = ${colors.item2}
 interval = 0.1
 
 ################################################################################
@@ -417,8 +408,8 @@ type = custom/script
 exec = ~/.config/polybar/scripts/tempcore.sh
 interval = 1
 format-padding = 0
-format-foreground = #fefefe
-format-background = #8d62ad 
+format-foreground = ${colors.item-foreground}
+format-background = ${colors.item1} 
 label =  %output%
 
 ################################################################################
@@ -429,16 +420,16 @@ type = internal/xkeyboard
 blacklist-0 = num lock
 
 format-prefix = " "
-format-prefix-foreground = #fefefe 
-format-prefix-background = #8d62ad 
-format-foreground = #fefefe
-format-background = #8d62ad 
+format-prefix-foreground = ${colors.item-foreground}
+format-prefix-background = ${colors.item1} 
+format-foreground = ${colors.item-foreground}
+format-background = ${colors.item1}
 
 label-layout = %layout%
 label-indicator-padding = 2
 label-indicator-margin = 1
-label-indicator-background = #fefefe 
-label-indicator-underline = #8d62ad 
+label-indicator-background = ${colors.item-foreground}
+label-indicator-underline = ${colors.item1}  
 
 ################################################################################
 
@@ -453,9 +444,9 @@ label = %title%
 label-maxlen = 50
 
 format-prefix = "  "
-format-prefix-underline = #292d3e
-format-underline = #e1acff
-format-foreground = #e1acff
+format-prefix-underline = ${colors.background}
+format-underline = ${colors.item-foreground}
+format-foreground =  ${colors.item-foreground}
 format-background = ${colors.background}
 
 ###############################################################################

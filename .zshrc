@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 export TERMCMD=alacritty
 export TERMINAL=alacritty
-export VISUAL=subl
+export VISUAL=nvim
 export EDITOR=nvim
 
 export ANDROID_SDK_ROOT=/home/datos/android_sdk
