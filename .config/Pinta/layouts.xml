@@ -1,14 +1,14 @@
 ﻿<layouts>
-  <layout name="Default" width="1356" height="619" size="1356" prefSize="1356" defaultHorSize="-1" defaultVerSize="-1" type="Horizontal">
+  <layout name="Default" width="681" height="628" size="681" prefSize="681" defaultHorSize="-1" defaultVerSize="-1" type="Horizontal">
     <group size="60" prefSize="60" defaultHorSize="56.0000000000002" defaultVerSize="250" type="Vertical">
-      <item size="315" prefSize="315" defaultHorSize="35" defaultVerSize="255.069025638094" id="Toolbox" visible="True" status="Dockable" />
-      <item size="303" prefSize="303" defaultHorSize="35" defaultVerSize="244.95088108469" id="Palette" visible="True" status="Dockable" />
+      <item size="319" prefSize="319" defaultHorSize="35" defaultVerSize="255.069025638094" id="Toolbox" visible="True" status="Dockable" />
+      <item size="308" prefSize="308" defaultHorSize="35" defaultVerSize="244.95088108469" id="Palette" visible="True" status="Dockable" />
     </group>
-    <item size="1081" prefSize="1081" defaultHorSize="290.046082949309" defaultVerSize="250" id="Canvas" visible="True" status="Dockable" />
-    <group size="213" prefSize="213" defaultHorSize="100" defaultVerSize="250" type="Vertical">
-      <item size="309" prefSize="309" defaultHorSize="100" defaultVerSize="250" id="Layers" visible="True" status="Dockable" />
+    <item size="394" prefSize="394" defaultHorSize="290.046082949309" defaultVerSize="250" id="Canvas" visible="True" status="Dockable" />
+    <group size="225" prefSize="225" defaultHorSize="100" defaultVerSize="250" type="Vertical">
+      <item size="313" prefSize="313" defaultHorSize="100" defaultVerSize="250" id="Layers" visible="True" status="Dockable" />
       <item size="250" prefSize="250" defaultHorSize="100" defaultVerSize="250" id="Images" visible="False" status="Dockable" />
-      <item size="309" prefSize="309" defaultHorSize="100" defaultVerSize="250" id="History" visible="True" status="Dockable" />
+      <item size="314" prefSize="314" defaultHorSize="100" defaultVerSize="250" id="History" visible="True" status="Dockable" />
     </group>
   </layout>
 </layouts>

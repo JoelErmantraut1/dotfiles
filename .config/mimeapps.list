@@ -35,6 +35,7 @@ text/plain=sublime_text.desktop
 text/x-python=sublime_text.desktop
 video/x-matroska=vlc.desktop;
 x-scheme-handler/kite=kite-copilot.desktop
+x-scheme-handler/mailspring=mailspring.desktop
 
 [Removed Associations]
 application/x-bzip-compressed-tar=file-roller-2.desktop;

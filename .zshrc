@@ -135,8 +135,7 @@ source $ZSH/oh-my-zsh.sh
 [[ -e ~/.profile ]] && emulate sh -c 'source ~/.profile'
 
 # Prints a message on startup
-# figlet -f smslant.flf JoelErmantraut | lolcat
-neofetch
+ figlet -f smslant.flf JoelErmantraut | lolcat
 
 # Remove user
 prompt_context() {

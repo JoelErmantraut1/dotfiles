@@ -9,14 +9,17 @@ set $num_lock Mod2
 # Num Lock Modifier
 
 # Scripts
-set $switchto ~/.config/i3-scripts/switchto.sh 
-set $autostart ~/.config/i3-scripts/autostart.sh
-set $next_workspace ~/.config/i3-scripts/next_workspace.py
-set $prev_workspace ~/.config/i3-scripts/prev_workspace.py
-set $dmenu_session ~/.config/dmenu/dmenu-session-options.sh 
-set $dmenu_expulse_drives ~/.config/dmenu/dmenu-expulse-drives.sh
-set $dmenu_passmenu ~/.config/dmenu/dmenu-advance-passmenu.py
-set $dmenu_bookmarks ~/.config/dmenu/dmenu-bookmarks.py
+set $switchto               ~/.config/i3-scripts/switchto.sh 
+set $autostart              ~/.config/i3-scripts/autostart.sh
+set $next_workspace         ~/.config/i3-scripts/next_workspace.py
+set $prev_workspace         ~/.config/i3-scripts/prev_workspace.py
+set $dmenu_session          ~/.config/dmenu/dmenu-session-options.sh 
+set $dmenu_expulse_drives   ~/.config/dmenu/dmenu-expulse-drives.py
+set $dmenu_passmenu         ~/.config/dmenu/dmenu-advance-passmenu.py
+set $dmenu_bookmarks        ~/.config/dmenu/dmenu-bookmarks.py
+set $dmenu_kill             ~/.config/dmenu/dmenu-kill.sh
+set $dmenu_scrot            ~/.config/dmenu/dmenu-scrot.sh
+set $dmenu_search           ~/.config/dmenu/dmenu-search.py
 
 # Colors
 # class                 border  backgr. text    indicator child_border
@@ -25,7 +28,6 @@ client.focused_inactive #92B4F4 #92B4F4 #ffffff #CFDEE7   #CFDEE7
 client.unfocused        #92B4F4 #92B4F4 #ffffff #CFDEE7   #CFDEE7 
 client.urgent           #2f343a #900000 #ffffff #900000   #900000
 client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
-
 client.background       #0A369D
 
 # Font for window titles. Will also be used by the bar unless a different font
@@ -146,6 +148,17 @@ bindsym $mod+Shift+8            move container to workspace number $ws8
 bindsym $mod+Shift+9            move container to workspace number $ws9
 bindsym $mod+Shift+equal        move container to workspace number $ws10
 
+#bindsym $mod+Shift+$num_lock+KP_1 move container to workspace number $ws1
+#bindsym $mod+Shift+$num_lock+KP_2 move container to workspace number $ws2
+#bindsym $mod+Shift+$num_lock+KP_3 move container to workspace number $ws3
+#bindsym $mod+Shift+$num_lock+KP_4 move container to workspace number $ws4
+#bindsym $mod+Shift+$num_lock+KP_5 move container to workspace number $ws5
+#bindsym $mod+Shift+$num_lock+KP_6 move container to workspace number $ws6
+#bindsym $mod+Shift+$num_lock+KP_7 move container to workspace number $ws7
+#bindsym $mod+Shift+$num_lock+KP_8 move container to workspace number $ws8
+#bindsym $mod+Shift+$num_lock+KP_9 move container to workspace number $ws9
+#bindsym $mod+Shift+$num_lock+KP_0 move container to workspace number $ws10
+
 for_window [workspace="10"] floating enable
 # Floating workspace
 
@@ -165,7 +178,7 @@ bindsym $mod+Shift+s exec flameshot gui
 bindsym $mod+Shift+Print exec "flameshot full -p /home/joel/Imagenes/Capturas"
 bindsym Print exec "flameshot screen -c"
 
-bindsym $mod+Shift+v exec "clipster -s -c"
+bindsym $mod+Shift+v exec "clipster -s"
 bindsym $mod+period exec "rofimoji"
 bindsym $mod+$alt+p exec $dmenu_passmenu
 
@@ -176,6 +189,9 @@ bindsym $mod+$alt+v exec virtualbox
 
 bindsym $mod+$alt+u exec $dmenu_expulse_drives
 bindsym $mod+$alt+b exec $dmenu_bookmarks
+bindsym $mod+$alt+k exec $dmenu_kill
+bindsym $mod+$alt+s exec $dmenu_scrot
+bindsym $mod+$alt+g exec $dmenu_search
 
 # Only one instance apps
 bindsym $mod+$alt+w exec $switchto "franz" "Franz" 

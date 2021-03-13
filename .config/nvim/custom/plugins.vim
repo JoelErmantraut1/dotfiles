@@ -32,7 +32,6 @@ Plug 'vim-python/python-syntax'
 Plug 'itchyny/lightline.vim' " Status Bar 
 Plug 'KabbAmine/vCoolor.vim' " Color Selector
 Plug 'voldikss/vim-floaterm'
-Plug 'mhinz/vim-startify' " Start screen
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 
 " Codificacion
