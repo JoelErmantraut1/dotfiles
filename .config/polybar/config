@@ -97,7 +97,7 @@ font-2 = "Font Awesome 5 Free:style=Regular:pixelsize=8;1"
 font-3 = "Font Awesome 5 Free:style=Solid:pixelsize=8;1"
 font-4 = "Font Awesome 5 Brands:pixelsize=8;1"
 
-modules-left = i3 xwindow
+modules-left = menu i3 xwindow
 modules-center = 
 modules-right = arrow1 backgrounds arrow3 memory2 arrow2 cpu2 arrow3 pavolume arrow2 temperature2 arrow3 date
 
@@ -385,6 +385,16 @@ format-prefix = "  "
 format-prefix-foreground = ${colors.item-foreground}
 format-foreground = ${colors.item-foreground}
 format-background = ${colors.item2}
+
+################################################################################
+
+[module/menu]
+type = custom/text
+content = "   Menú "
+content-foreground = ${colors.item-foreground}
+content-background = ${colors.background}
+ 
+click-left = rofi -show drun 
 
 ################################################################################
 
