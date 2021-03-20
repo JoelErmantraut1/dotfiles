@@ -77,7 +77,7 @@ HDMI-1 Width 1366=638
 HDMI-A-0 Height 1366x768=439
 HDMI-A-0 Height 768=439
 HDMI-A-0 Width 1366=407
-HDMI-A-0 Width 1366x768=407
+HDMI-A-0 Width 1366x768=403
 
 [Konfigurator]
 Window Height=593
@@ -101,7 +101,7 @@ History Button Visible=false
 Media Button Visible=false
 Navigator Full Path=true
 Panel Toolbar visible=false
-Show Hidden=true
+Show Hidden=false
 Show Tab Buttons=false
 Single Instance Mode=true
 Sort method=1

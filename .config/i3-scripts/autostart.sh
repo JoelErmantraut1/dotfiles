@@ -1,3 +1,4 @@
 #!/bin/bash
 
-/home/joel/.config/polybar/launch.sh
+$HOME/.config/polybar/launch.sh &
+#$HOME/.config/i3-scripts/define_ws_condition.py &
