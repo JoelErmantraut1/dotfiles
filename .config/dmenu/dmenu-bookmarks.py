@@ -34,7 +34,7 @@ def launch_dmenu(options):
     Runs dmenu with given options.
     """
     options = "\n".join(options)
-    string = f'echo -e "{options}" | dmenu_styled -p "Bookmarks:" -l 20'
+    string = f'echo -e "{options}" | dmenu_styled -p "Marcadores:" -l 20'
     return get_cmd_output(string)
 
 def get_bookmarks(obj):
