@@ -1,0 +1,7 @@
+#!/bin/bash
+
+echo "Updates Available"
+
+echo "Pacman Updates: $(checkupdates | wc -l)"
+#echo "Yay Updates: $()"
+echo "Snap Updates: $(snap refresh --list 2>/dev/null | wc -l)"
