@@ -17,7 +17,7 @@ engines = {
     "google": "https://www.google.com/search?q=",
     "googleimages": "https://www.google.com/search?hl=en&tbm=isch&q=",
     "mercadolibre": "https://listado.mercadolibre.com.ar/",
-    "stack": "https://stackoverflow.com/search?q=",
+    "stackoverflow": "https://stackoverflow.com/search?q=",
     "translate": "https://translate.google.com/?sl=auto&tl=en&text=",
     "wayback": "https://web.archive.org/web/*/",
     "wikipedia": "https://en.wikipedia.org/wiki/",
@@ -35,12 +35,12 @@ def get_cmd_output(cmd):
     result = output.decode()
     return result
 
-def launch_dmenu(options):
+def launch_dmenu(options, label):
     """
     Runs dmenu with given options.
     """
     options = "\n".join(options)
-    string = f'echo -e "{options}" | dmenu_styled -p "Motor:"'
+    string = f'echo -e "{options}" | dmenu_styled -p "{label}:"'
     return get_cmd_output(string)
 
 def run_process(cmd):
@@ -60,13 +60,17 @@ def open_browser(engine, link):
     thread.start()
 
 def run():
-    result = launch_dmenu(engines.keys())
+    result = launch_dmenu(engines.keys(), "Motor")
     result = result[:-1]
     # To delete last \n from dmenu
+    if result == "":
+        exit()
 
     engine = engines[result]
-    result = launch_dmenu([])
+    result = launch_dmenu([], result)
     result = result[:-1]
+    if result == "":
+        exit()
 
     open_browser(engine, result)
 
