@@ -1,5 +1,5 @@
 {
-   "checksum": "f377f5fab51303e1d761904451bbc174",
+   "checksum": "d6d3ce88ec7864a31dba9bde31b64c6b",
    "roots": {
       "bookmark_bar": {
          "children": [ {
@@ -75,9 +75,16 @@
                   "name": "1.1. Linear Models — scikit-learn 0.24.1 documentation",
                   "type": "url",
                   "url": "https://scikit-learn.org/stable/modules/linear_model.html"
+               }, {
+                  "date_added": "13260887231189897",
+                  "guid": "f793b43e-86f4-4bef-ab7f-577a1767abdb",
+                  "id": "263",
+                  "name": "The easiest way to convert Jupyter(.ipynb) to Python(.py) | by Bongsang Kim | Medium",
+                  "type": "url",
+                  "url": "https://medium.com/@researchplex/the-easiest-way-to-convert-jupyter-ipynb-to-python-py-912e39f16917"
                } ],
                "date_added": "13253321237619032",
-               "date_modified": "13258740565322860",
+               "date_modified": "13260907757409369",
                "guid": "35115905-6794-4f20-8362-c892279c621c",
                "id": "30",
                "name": "Investigacion",
@@ -284,9 +291,16 @@
                "name": "Lower Voltage Methods Other Than Voltage Dividing - Electrical Engineering Stack Exchange",
                "type": "url",
                "url": "https://electronics.stackexchange.com/questions/154553/lower-voltage-methods-other-than-voltage-dividing"
+            }, {
+               "date_added": "13260853343613830",
+               "guid": "a751622f-6b61-433d-9aa4-fbdf06eeffdd",
+               "id": "261",
+               "name": "All STM32F4 libraries - STM32F4 Discovery",
+               "type": "url",
+               "url": "https://stm32f4-discovery.net/2014/05/all-stm32f429-libraries-at-one-place/"
             } ],
             "date_added": "13253321237620266",
-            "date_modified": "13256192193183978",
+            "date_modified": "13260887231189897",
             "guid": "bf357bdb-dd11-4585-820e-2c7afdb549d0",
             "id": "58",
             "name": "Electronica",
@@ -417,7 +431,7 @@
                   "url": "https://unix.stackexchange.com/questions/178921/what-does-no-carrier-and-down-mean-for-a-wireless-interface"
                } ],
                "date_added": "13258925233763340",
-               "date_modified": "13260736850544162",
+               "date_modified": "13260853343613830",
                "guid": "b08eff3c-5b56-4ffe-8e18-bb69f75a3266",
                "id": "240",
                "name": "i3",
@@ -1396,9 +1410,16 @@
             "name": "MEGA",
             "type": "url",
             "url": "https://mega.nz/folder/1MVCTS6Z#4_ZGKyIYM5P2RmUhWQN2pA/folder/YRtnhIZS"
+         }, {
+            "date_added": "13260907757409369",
+            "guid": "091447f3-4604-48b5-9c20-9bc30c207d1f",
+            "id": "265",
+            "name": "Área personal",
+            "type": "url",
+            "url": "https://aulavirtual.frbb.utn.edu.ar/my/"
          } ],
          "date_added": "13253321145079656",
-         "date_modified": "13260396448280683",
+         "date_modified": "13260907759913300",
          "guid": "00000000-0000-4000-a000-000000000002",
          "id": "1",
          "name": "Barra de favoritos",

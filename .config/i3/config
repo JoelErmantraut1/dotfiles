@@ -23,6 +23,7 @@ set $flameshot_full "flameshot full -p /home/joel/Imagenes/Capturas"
 set $flameshot_copy "flameshot screen -c"
 set $rofi "rofi -combi-modi window,drun -show combi -modi combi"
 set $clipster "clipster -s"
+set $ranger "alacritty -e ranger"
 
 # Colors
 # class                 border  backgr. text    indicator child_border
@@ -98,6 +99,9 @@ bindsym $mod+minus scratchpad show
 bindsym $mod+m exec i3-input -F 'mark %s' -l 1 -P 'Mark: '
 # read 1 character and go to the window with the character
 bindsym $mod+g exec i3-input -F '[con_mark="%s"] focus' -l 1 -P 'Goto: '
+
+# Prompt input
+bindsym $mod+p exec i3-input -F 'exec %s' -P 'Run: '
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
@@ -186,7 +190,6 @@ bindsym $mod+period exec "rofimoji"
 bindsym $mod+$alt+p exec $dmenu_passmenu
 
 bindsym $mod+$alt+c exec qalculate-gtk
-bindsym $mod+e      exec krusader
 bindsym $mod+$alt+e exec pcmanfm
 bindsym $mod+$alt+v exec virtualbox
 
@@ -200,6 +203,7 @@ bindsym $mod+$alt+g exec $dmenu_search
 bindsym $mod+$alt+w exec $switchto "franz" "Franz" 
 bindsym $mod+$alt+n exec $switchto "brave" "Brave-browser"
 bindsym $mod+$alt+a exec $switchto "gnote" "Gnote" 
+bindsym $mod+e exec $switchto $ranger "ranger"
 
 # Use pactl to adjust volume in PulseAudio.
 bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -D pulse sset Master 2%+ 
@@ -239,8 +243,6 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 
-bindsym $mod+t nop
-
 # window assignment to workspaces
 # SECOND WORKSPACE
 assign [class="Brave-browser"]  $ws2
@@ -252,7 +254,7 @@ assign [class="qutebrowser"]    $ws2
 # THIRD WORKSPACE
 assign [class="krusader"]       $ws3
 assign [class="pcmanfm"]        $ws3
-assign [class="ranger"]         $ws3
+assign [title="ranger"]         $ws3
 assign [title="nomacs"]         $ws3
 assign [class="xarchiver"]      $ws3
 assign [class="file-roller"]    $ws3
@@ -264,6 +266,7 @@ assign [class="gedit"]                          $ws4
 assign [class="jetbrains-studio"]               $ws4
 assign [class="vscodium"]                       $ws4
 assign [class="arduino"]                        $ws4
+assign [title=^"nvim"]                          $ws4
 # FIFTH WORKSPACE
 assign [class="prepros"]    $ws5
 assign [class="Wps"]        $ws5
@@ -318,7 +321,7 @@ for_window [title="pinentry"]       floating enable
 # Programs on start
 exec alacritty
 exec brave
-exec krusader
+exec ranger
 exec franz 
 
 # Configuration properties
