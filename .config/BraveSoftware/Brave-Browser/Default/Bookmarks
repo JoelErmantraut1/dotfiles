@@ -1,5 +1,5 @@
 {
-   "checksum": "d6d3ce88ec7864a31dba9bde31b64c6b",
+   "checksum": "7b2f33e328c002ca59e6588131092b25",
    "roots": {
       "bookmark_bar": {
          "children": [ {
@@ -1417,9 +1417,16 @@
             "name": "Área personal",
             "type": "url",
             "url": "https://aulavirtual.frbb.utn.edu.ar/my/"
+         }, {
+            "date_added": "13261893664262068",
+            "guid": "339a9bd4-bcd0-499a-b806-e33a5db1d5d3",
+            "id": "267",
+            "name": "How to Connect to Wi-Fi Through the Linux Terminal With Nmcli",
+            "type": "url",
+            "url": "https://www.makeuseof.com/connect-to-wifi-with-nmcli/"
          } ],
          "date_added": "13253321145079656",
-         "date_modified": "13260907759913300",
+         "date_modified": "13261893664262068",
          "guid": "00000000-0000-4000-a000-000000000002",
          "id": "1",
          "name": "Barra de favoritos",

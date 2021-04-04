@@ -23,7 +23,6 @@ set $flameshot_full "flameshot full -p /home/joel/Imagenes/Capturas"
 set $flameshot_copy "flameshot screen -c"
 set $rofi "rofi -combi-modi window,drun -show combi -modi combi"
 set $clipster "clipster -s"
-set $ranger "alacritty -e ranger"
 
 # Colors
 # class                 border  backgr. text    indicator child_border
@@ -203,7 +202,7 @@ bindsym $mod+$alt+g exec $dmenu_search
 bindsym $mod+$alt+w exec $switchto "franz" "Franz" 
 bindsym $mod+$alt+n exec $switchto "brave" "Brave-browser"
 bindsym $mod+$alt+a exec $switchto "gnote" "Gnote" 
-bindsym $mod+e exec $switchto $ranger "ranger"
+bindsym $mod+e exec $switchto "krusader" "krusader"
 
 # Use pactl to adjust volume in PulseAudio.
 bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -D pulse sset Master 2%+ 
@@ -321,7 +320,7 @@ for_window [title="pinentry"]       floating enable
 # Programs on start
 exec alacritty
 exec brave
-exec ranger
+exec krusader 
 exec franz 
 
 # Configuration properties
