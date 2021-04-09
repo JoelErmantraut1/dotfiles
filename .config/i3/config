@@ -17,6 +17,7 @@ set $dmenu_bookmarks        ~/.config/dmenu/dmenu-bookmarks.py
 set $dmenu_kill             ~/.config/dmenu/dmenu-kill.sh
 set $dmenu_scrot            ~/.config/dmenu/dmenu-scrot.sh
 set $dmenu_search           ~/.config/dmenu/dmenu-search.py
+set $station                ~/station/station.AppImage
 
 # Commands
 set $flameshot_full "flameshot full -p /home/joel/Imagenes/Capturas"              
@@ -199,7 +200,7 @@ bindsym $mod+$alt+s exec $dmenu_scrot
 bindsym $mod+$alt+g exec $dmenu_search
 
 # Only one instance apps
-bindsym $mod+$alt+w exec $switchto "franz" "Franz" 
+bindsym $mod+$alt+w exec $switchto $station "Station" 
 bindsym $mod+$alt+n exec $switchto "brave" "Brave-browser"
 bindsym $mod+$alt+a exec $switchto "gnote" "Gnote" 
 bindsym $mod+e exec $switchto "krusader" "krusader"
@@ -280,6 +281,7 @@ assign [class="Telegram"]   $ws6
 assign [class="droidcam"]   $ws6
 assign [class="zoom"]       $ws6
 assign [class="discord"]    $ws6
+assign [class="Station"]    $ws6
 # SEVENTH WORKSPACE
 assign [class="vlc"]                            $ws7
 assign [class="transmission"]                   $ws7
@@ -321,7 +323,7 @@ for_window [title="pinentry"]       floating enable
 exec alacritty
 exec brave
 exec krusader 
-exec franz 
+exec $station
 
 # Configuration properties
 focus_on_window_activation focus

@@ -1,5 +1,5 @@
 {
-   "checksum": "7b2f33e328c002ca59e6588131092b25",
+   "checksum": "f0ab19382c28502e18e2c7ca2d04b371",
    "roots": {
       "bookmark_bar": {
          "children": [ {
@@ -91,12 +91,12 @@
                "type": "folder"
             }, {
                "children": [ {
-                  "date_added": "13244175187000000",
-                  "guid": "7ac23c81-88d7-4aae-b427-8c5814c9f802",
-                  "id": "43",
-                  "name": "2020-Informática-I-notas - Hojas de cálculo de Google",
+                  "date_added": "13262062397325470",
+                  "guid": "52690231-1bdd-4e6a-b730-0e3828581729",
+                  "id": "269",
+                  "name": "2021-Informática-I-notas - Hojas de cálculo de Google",
                   "type": "url",
-                  "url": "https://docs.google.com/spreadsheets/d/1IAgwYEZZqWZLJr_kPMOeWBXfyvNQMGRwhI8vPfMGfSI/edit?ts=5f59449d#gid=484569269"
+                  "url": "https://docs.google.com/spreadsheets/d/1K0Zk8mdH94C1y48veT_ljk8JgVPZ3TGQz2ywF8f4W1M/edit?ts=605c9e2c#gid=484569269"
                }, {
                   "date_added": "13247018512000000",
                   "guid": "0714a9b4-b392-4438-a506-075cfb258846",
@@ -106,7 +106,7 @@
                   "url": "https://repl.it/"
                } ],
                "date_added": "13253321237619515",
-               "date_modified": "0",
+               "date_modified": "13262062406341177",
                "guid": "92da7b8d-bcd9-4f49-a82e-498671ecb3a1",
                "id": "42",
                "name": "Info I",
@@ -298,9 +298,38 @@
                "name": "All STM32F4 libraries - STM32F4 Discovery",
                "type": "url",
                "url": "https://stm32f4-discovery.net/2014/05/all-stm32f429-libraries-at-one-place/"
+            }, {
+               "children": [ {
+                  "date_added": "13262148125570532",
+                  "guid": "ceb90549-173d-4b56-9eb1-c09c46e42f07",
+                  "id": "272",
+                  "name": "Cable Mallado Sata 22 Pines A Sata Datos Y Power Molex | Mercado Libre",
+                  "type": "url",
+                  "url": "https://articulo.mercadolibre.com.ar/MLA-885094098-cable-mallado-sata-22-pines-a-sata-datos-y-power-molex-_JM#reco_item_pos=1&reco_backend=machinalis-seller-items-pdp&reco_backend_type=low_level&reco_client=vip-seller_items-above&reco_id=840e802d-ac78-41a1-b94d-938237e732e4"
+               }, {
+                  "date_added": "13262148130169859",
+                  "guid": "4f4223b8-88d2-4b85-a194-b3f0bdef8ef1",
+                  "id": "273",
+                  "name": "Cable Sata Datos Power 22 Pines Hembra A Sata Datos Y Molex | Mercado Libre",
+                  "type": "url",
+                  "url": "https://articulo.mercadolibre.com.ar/MLA-612268406-cable-sata-datos-power-22-pines-hembra-a-sata-datos-y-molex-_JM#reco_item_pos=1&reco_backend=machinalis-seller-items-pdp&reco_backend_type=low_level&reco_client=vip-seller_items-above&reco_id=6a819cee-ab3b-4410-9198-5c8f1922beb2"
+               }, {
+                  "date_added": "13262148133921267",
+                  "guid": "8e823839-8778-45e6-95eb-77d3313579e9",
+                  "id": "274",
+                  "name": "Cable Sata Power Datos 13 Pines A Sata Datos 7 Pines + Molex | Mercado Libre",
+                  "type": "url",
+                  "url": "https://articulo.mercadolibre.com.ar/MLA-861692466-cable-sata-power-datos-13-pines-a-sata-datos-7-pines-molex-_JM#reco_item_pos=0&reco_backend=machinalis-seller-items-pdp&reco_backend_type=low_level&reco_client=vip-seller_items-above&reco_id=840e802d-ac78-41a1-b94d-938237e732e4"
+               } ],
+               "date_added": "13262148042419554",
+               "date_modified": "13262148133921267",
+               "guid": "c3079199-4744-4239-8958-c1f514ab854a",
+               "id": "271",
+               "name": "PC",
+               "type": "folder"
             } ],
             "date_added": "13253321237620266",
-            "date_modified": "13260887231189897",
+            "date_modified": "13262148125570532",
             "guid": "bf357bdb-dd11-4585-820e-2c7afdb549d0",
             "id": "58",
             "name": "Electronica",
@@ -422,13 +451,6 @@
                   "name": "RinCat/RTL88x2BU-Linux-Driver: Realtek RTL88x2BU WiFi USB Driver for Linux",
                   "type": "url",
                   "url": "https://github.com/RinCat/RTL88x2BU-Linux-Driver"
-               }, {
-                  "date_added": "13260736850544162",
-                  "guid": "64c1336d-8d31-49ff-bb10-ba7b42a9e9c8",
-                  "id": "259",
-                  "name": "debian - What does `NO-CARRIER` and `DOWN` mean for a wireless interface? - Unix & Linux Stack Exchange",
-                  "type": "url",
-                  "url": "https://unix.stackexchange.com/questions/178921/what-does-no-carrier-and-down-mean-for-a-wireless-interface"
                } ],
                "date_added": "13258925233763340",
                "date_modified": "13260853343613830",
@@ -1426,7 +1448,7 @@
             "url": "https://www.makeuseof.com/connect-to-wifi-with-nmcli/"
          } ],
          "date_added": "13253321145079656",
-         "date_modified": "13261893664262068",
+         "date_modified": "13262062397325470",
          "guid": "00000000-0000-4000-a000-000000000002",
          "id": "1",
          "name": "Barra de favoritos",
